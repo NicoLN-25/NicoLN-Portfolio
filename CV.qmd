@@ -3,4 +3,17 @@ title: "Curriculum Vitae"
 format: html
 ---
 
-<!-- Aquí irán tus dos versiones del CV (académico y analista de datos) -->
+## Formal education 🎓
+
+-   **M.Sc. in Natural Sciences**\
+    Universidad del Rosario, Bogotá, Colombia
+
+-   **B.Sc. in Biology**\
+    Universidad del Rosario, Bogotá, Colombia
+
+------------------------------------------------------------------------
+
+## CV en PDF 📄
+
+Puedes descargar mi CV profesional completo aquí:\
+[Download scienific CV (PDF)](assets/CV_NLN.pdf)
