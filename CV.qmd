@@ -1,7 +1,11 @@
 ---
-title: "Curriculum Vitae"
+title: "Curriculum vitae"
 format: html
 ---
+
+## 📎 Download
+
+[Download PDF version of my CV](assets/NLN_CV.pdf){.btn .btn-primary target="_blank"}
 
 ## Formal education 🎓
 
