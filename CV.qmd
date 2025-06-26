@@ -1,0 +1,6 @@
+---
+title: "Curriculum Vitae"
+format: html
+---
+
+<!-- Aquí irán tus dos versiones del CV (académico y analista de datos) -->
