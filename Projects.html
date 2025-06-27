@@ -117,7 +117,7 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -133,7 +133,7 @@ ul.task-list li input[type="checkbox"] {
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -142,7 +142,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page-left">
 
     
   
@@ -162,57 +162,46 @@ ul.task-list li input[type="checkbox"] {
 <p>Este proyecto consiste en un dashboard interactivo que permite explorar métricas clave de ventas a lo largo del tiempo, por regiones y por categorías de productos.</p>
 <style>
 .carousel-wrapper {
-  position: relative;
-  overflow: hidden;
-  border-radius: 8px;
-  background: #f9f9f9;
-  padding: 10px;
-  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+.carousel-btn {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0 1em;
 }
 
 .carousel {
   display: flex;
-  gap: 10px;
   overflow-x: auto;
   scroll-behavior: smooth;
-  scrollbar-width: none;
-}
-.carousel::-webkit-scrollbar {
-  display: none;
+  gap: 0px;
+  width: 100%;
 }
 
 .carousel img {
-  height: 200px;
+  height: 400px;
   border-radius: 10px;
   flex-shrink: 0;
 }
-
-.carousel-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0,0,0,0.3);
-  border: none;
-  color: white;
-  font-size: 20px;
-  padding: 8px 12px;
-  cursor: pointer;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-#prev-btn { left: 5px; }
-#next-btn { right: 5px; }
 </style>
+
 <div class="carousel-wrapper">
-<p><button class="carousel-btn" id="prev-btn" onclick="document.getElementById('carousel').scrollBy({left: -250, behavior: 'smooth'});">←</button></p>
-<div id="carousel" class="carousel">
-<pre><code>&lt;img src="assets/data-analysis/covid-dashboard/Resume.png" alt="Resumen COVID"&gt;
-&lt;img src="assets/data-analysis/covid-dashboard/Active_Cases.png" alt="Casos Activos"&gt;
-&lt;img src="assets/data-analysis/covid-dashboard/Positive_Cases.png" alt="Casos Positivos"&gt;
-&lt;img src="assets/data-analysis/covid-dashboard/Recovered_Cases.png" alt="Casos Recuperados"&gt;</code></pre>
-</div>
-<p><button class="carousel-btn" id="next-btn" onclick="document.getElementById('carousel').scrollBy({left: 250, behavior: 'smooth'});">→</button></p>
+  <button class="carousel-btn" onclick="document.getElementById('carousel').scrollBy({left: -250, behavior: 'smooth'});">←</button>
+  
+  <div id="carousel" class="carousel">
+    <img src="assets/data-analysis/covid-dashboard/Resume.png" alt="Resumen COVID">
+    <img src="assets/data-analysis/covid-dashboard/Active_Cases.png" alt="Casos Activos">
+    <img src="assets/data-analysis/covid-dashboard/Positive_Cases.png" alt="Casos Positivos">
+    <img src="assets/data-analysis/covid-dashboard/Recovered_Cases.png" alt="Casos Recuperados">
+  </div>
+  
+  <button class="carousel-btn" onclick="document.getElementById('carousel').scrollBy({left: 250, behavior: 'smooth'});">→</button>
 </div>
 <p><strong>Objectives of the analysis:</strong></p>
 <ul>
