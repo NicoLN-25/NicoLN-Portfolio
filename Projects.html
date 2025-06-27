@@ -161,46 +161,46 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Geographic and geospatial analyses of COVD-19 in Colombia: Trends in case distribution, recovery, and mortality (2023–2024)</strong></p>
 <p>Este proyecto consiste en un dashboard interactivo que permite explorar métricas clave de ventas a lo largo del tiempo, por regiones y por categorías de productos.</p>
 <style>
-.carousel-container {
+.slider-container {
   width: 100%;
-  max-width: 700px;
   overflow: hidden;
-  margin: 0 auto;
-  border-radius: 10px;
+  border-radius: 8px;
+  background: #f9f9f9;
+  margin-top: 10px;
 }
 
-.carousel-track {
+.slider-track {
   display: flex;
-  width: 400%;
-  animation: slide 16s infinite;
+  animation: scroll 25s linear infinite;
+  gap: 10px;
 }
 
-.carousel-track img {
-  width: 100%;
+.slider-track img {
+  height: 450px;
+  border-radius: 10px;
   flex-shrink: 0;
-  object-fit: cover;
 }
 
-@keyframes slide {
-  0% { transform: translateX(0%); }
-  20% { transform: translateX(0%); }
-  25% { transform: translateX(-100%); }
-  45% { transform: translateX(-100%); }
-  50% { transform: translateX(-200%); }
-  70% { transform: translateX(-200%); }
-  75% { transform: translateX(-300%); }
-  95% { transform: translateX(-300%); }
-  100% { transform: translateX(0%); }
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 </style>
-<div class="carousel-container">
-<div class="carousel-track">
-<pre><code>&lt;img src="assets/data-analysis/covid-dashboard/Resume.png" alt="Slide 1"&gt;
-&lt;img src="assets/data-analysis/covid-dashboard/Active_Cases.png" alt="Slide 2"&gt;
-&lt;img src="assets/data-analysis/covid-dashboard/Positive_Cases.png" alt="Slide 3"&gt;
-&lt;img src="assets/data-analysis/covid-dashboard/Recovered_Cases.png" alt="Slide 3"&gt;
-&lt;img src="assets/data-analysis/covid-dashboard/Resume.png" alt="Slide 1 repeat"&gt;</code></pre>
-</div>
+
+<div class="slider-container">
+  <div class="slider-track">
+  
+  <img src="assets/data-analysis/covid-dashboard/Resume.png" alt="Resume">
+  <img src="assets/data-analysis/covid-dashboard/Active_Cases.png" alt="Active Cases">
+  <img src="assets/data-analysis/covid-dashboard/Positive_Cases.png" alt="Positive Cases">
+  <img src="assets/data-analysis/covid-dashboard/Recovered_Cases.png" alt="Recovered Cases">
+  
+  <!-- Repetición para scroll continuo -->
+  <img src="assets/data-analysis/covid-dashboard/Resume.png" alt="Resume">
+  <img src="assets/data-analysis/covid-dashboard/Active_Cases.png" alt="Active Cases">
+  <img src="assets/data-analysis/covid-dashboard/Positive_Cases.png" alt="Positive Cases">
+  <img src="assets/data-analysis/covid-dashboard/Recovered_Cases.png" alt="Recovered Cases">
+    </div>
 </div>
 <p><strong>Objectives of the analysis:</strong></p>
 <ul>
