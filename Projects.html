@@ -161,40 +161,45 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Geographic and geospatial analyses of COVD-19 in Colombia: Trends in case distribution, recovery, and mortality (2023–2024)</strong></p>
 <p>Este proyecto consiste en un dashboard interactivo que permite explorar métricas clave de ventas a lo largo del tiempo, por regiones y por categorías de productos.</p>
 <style>
-.carousel {
+.carousel-container {
   width: 100%;
-  max-width: 800px;
-  margin: 20px auto;
+  max-width: 700px;
   overflow: hidden;
+  margin: 0 auto;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
+
 .carousel-track {
   display: flex;
-  animation: slide 15s infinite ease-in-out;
+  width: 400%;
+  animation: slide 16s infinite;
 }
-.carousel img {
+
+.carousel-track img {
   width: 100%;
   flex-shrink: 0;
+  object-fit: cover;
 }
+
 @keyframes slide {
-  0%    { transform: translateX(0%); }
-  20%   { transform: translateX(0%); }
-  25%   { transform: translateX(-100%); }
-  45%   { transform: translateX(-100%); }
-  50%   { transform: translateX(-200%); }
-  70%   { transform: translateX(-200%); }
-  75%   { transform: translateX(-300%); }
-  95%   { transform: translateX(-300%); }
-  100%  { transform: translateX(0%); }
+  0% { transform: translateX(0%); }
+  20% { transform: translateX(0%); }
+  25% { transform: translateX(-100%); }
+  45% { transform: translateX(-100%); }
+  50% { transform: translateX(-200%); }
+  70% { transform: translateX(-200%); }
+  75% { transform: translateX(-300%); }
+  95% { transform: translateX(-300%); }
+  100% { transform: translateX(0%); }
 }
 </style>
-<div class="carousel">
+<div class="carousel-container">
 <div class="carousel-track">
 <pre><code>&lt;img src="assets/data-analysis/covid-dashboard/Resume.png" alt="Slide 1"&gt;
 &lt;img src="assets/data-analysis/covid-dashboard/Active_Cases.png" alt="Slide 2"&gt;
 &lt;img src="assets/data-analysis/covid-dashboard/Positive_Cases.png" alt="Slide 3"&gt;
-&lt;img src="assets/data-analysis/covid-dashboard/Recovered_Cases.png" alt="Slide 1 again"&gt; &lt;!-- loop --&gt;</code></pre>
+&lt;img src="assets/data-analysis/covid-dashboard/Recovered_Cases.png" alt="Slide 3"&gt;
+&lt;img src="assets/data-analysis/covid-dashboard/Resume.png" alt="Slide 1 repeat"&gt;</code></pre>
 </div>
 </div>
 <p><strong>Objectives of the analysis:</strong></p>
