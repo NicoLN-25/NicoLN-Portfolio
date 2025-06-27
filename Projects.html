@@ -161,46 +161,58 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Geographic and geospatial analyses of COVD-19 in Colombia: Trends in case distribution, recovery, and mortality (2023–2024)</strong></p>
 <p>Este proyecto consiste en un dashboard interactivo que permite explorar métricas clave de ventas a lo largo del tiempo, por regiones y por categorías de productos.</p>
 <style>
-.slider-container {
-  width: 100%;
+.carousel-wrapper {
+  position: relative;
   overflow: hidden;
   border-radius: 8px;
   background: #f9f9f9;
-  margin-top: 10px;
+  padding: 10px;
+  margin-bottom: 1rem;
 }
 
-.slider-track {
+.carousel {
   display: flex;
-  animation: scroll 25s linear infinite;
   gap: 10px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
 }
 
-.slider-track img {
-  height: 450px;
+.carousel img {
+  height: 200px;
   border-radius: 10px;
   flex-shrink: 0;
 }
 
-@keyframes scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.3);
+  border: none;
+  color: white;
+  font-size: 20px;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 1;
 }
-</style>
 
-<div class="slider-container">
-  <div class="slider-track">
-  
-  <img src="assets/data-analysis/covid-dashboard/Resume.png" alt="Resume">
-  <img src="assets/data-analysis/covid-dashboard/Active_Cases.png" alt="Active Cases">
-  <img src="assets/data-analysis/covid-dashboard/Positive_Cases.png" alt="Positive Cases">
-  <img src="assets/data-analysis/covid-dashboard/Recovered_Cases.png" alt="Recovered Cases">
-  
-  <!-- Repetición para scroll continuo -->
-  <img src="assets/data-analysis/covid-dashboard/Resume.png" alt="Resume">
-  <img src="assets/data-analysis/covid-dashboard/Active_Cases.png" alt="Active Cases">
-  <img src="assets/data-analysis/covid-dashboard/Positive_Cases.png" alt="Positive Cases">
-  <img src="assets/data-analysis/covid-dashboard/Recovered_Cases.png" alt="Recovered Cases">
-    </div>
+#prev-btn { left: 5px; }
+#next-btn { right: 5px; }
+</style>
+<div class="carousel-wrapper">
+<p><button class="carousel-btn" id="prev-btn" onclick="document.getElementById('carousel').scrollBy({left: -250, behavior: 'smooth'});">←</button></p>
+<div id="carousel" class="carousel">
+<pre><code>&lt;img src="assets/data-analysis/covid-dashboard/Resume.png" alt="Resumen COVID"&gt;
+&lt;img src="assets/data-analysis/covid-dashboard/Active_Cases.png" alt="Casos Activos"&gt;
+&lt;img src="assets/data-analysis/covid-dashboard/Positive_Cases.png" alt="Casos Positivos"&gt;
+&lt;img src="assets/data-analysis/covid-dashboard/Recovered_Cases.png" alt="Casos Recuperados"&gt;</code></pre>
+</div>
+<p><button class="carousel-btn" id="next-btn" onclick="document.getElementById('carousel').scrollBy({left: 250, behavior: 'smooth'});">→</button></p>
 </div>
 <p><strong>Objectives of the analysis:</strong></p>
 <ul>
