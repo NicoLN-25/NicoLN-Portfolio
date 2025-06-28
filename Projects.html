@@ -163,46 +163,77 @@ ul.task-list li input[type="checkbox"] {
 <style>
 .carousel-wrapper {
   display: flex;
-  align-items: center;
   justify-content: center;
-  margin-bottom: 1em;
+  align-items: center;
+  gap: 20px;
+}
+
+.carousel-container {
+  position: relative;
+  width: 800px;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-image {
+  min-width: 100%;
+  object-fit: contain;
 }
 
 .carousel-btn {
-  font-size: 24px;
-  background: none;
+  background: rgba(0, 0, 0, 0.4);
   border: none;
+  color: white;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
   cursor: pointer;
-  padding: 0 1em;
-}
-
-.carousel {
+  transition: background 0.3s;
   display: flex;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  gap: 0px;
-  width: 100%;
+  line-height: 1 !important;
+  align-items: center;
+  justify-content: center;
 }
 
-.carousel img {
-  height: 400px;
-  border-radius: 10px;
-  flex-shrink: 0;
+.carousel-btn:hover {
+  background: rgba(0, 0, 0, 0.6);
 }
 </style>
 
 <div class="carousel-wrapper">
-  <button class="carousel-btn" onclick="document.getElementById('carousel').scrollBy({left: -250, behavior: 'smooth'});">←</button>
-  
-  <div id="carousel" class="carousel">
-    <img src="assets/data-analysis/covid-dashboard/Resume.png" alt="Resumen COVID">
-    <img src="assets/data-analysis/covid-dashboard/Active_Cases.png" alt="Casos Activos">
-    <img src="assets/data-analysis/covid-dashboard/Positive_Cases.png" alt="Casos Positivos">
-    <img src="assets/data-analysis/covid-dashboard/Recovered_Cases.png" alt="Casos Recuperados">
+  <button class="carousel-btn" onclick="moveSlide(-1)">❮</button>
+
+  <div class="carousel-container">
+    <div class="carousel-track" id="carousel">
+      <img class="carousel-image" src="assets/data-analysis/covid-dashboard/Resume.png" alt="Resumen COVID">
+      <img class="carousel-image" src="assets/data-analysis/covid-dashboard/Active_Cases.png" alt="Casos Activos">
+      <img class="carousel-image" src="assets/data-analysis/covid-dashboard/Positive_Cases.png" alt="Casos Positivos">
+      <img class="carousel-image" src="assets/data-analysis/covid-dashboard/Recovered_Cases.png" alt="Casos Recuperados">
+    </div>
   </div>
-  
-  <button class="carousel-btn" onclick="document.getElementById('carousel').scrollBy({left: 250, behavior: 'smooth'});">→</button>
+
+  <button class="carousel-btn" onclick="moveSlide(1)">❯</button>
 </div>
+
+<script>
+let index = 0;
+function moveSlide(step) {
+  const track = document.getElementById('carousel');
+  const total = track.children.length;
+  index = (index + step + total) % total;
+  track.style.transform = `translateX(-${index * 100}%)`;
+}
+</script>
+<p><br>
+</p>
 <p><strong>Objectives of the analysis:</strong></p>
 <ul>
 <li>Examinar las dinámicas casos positivos de COVID-19, recuperaciones, y muertes a nivel geográfico, demográfico y clínico durante los años 2023-2024</li>
