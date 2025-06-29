@@ -73,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-sidebar floating nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -95,11 +95,11 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link active" href="./about.html" aria-current="page"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./CV.html" aria-current="page"> 
+    <a class="nav-link" href="./CV.html"> 
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
@@ -116,17 +116,77 @@ ul.task-list li input[type="checkbox"] {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./CV.html">Curriculum vitae</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+        <div class="sidebar-tools-main">
+    <a href="" title="<img src=&quot;assets/img/nicolas.jpg&quot; style=&quot;width:100px; border-radius:50%; margin-bottom:0.5em;&quot;>
+<div style=&quot;font-weight:bold;&quot;>Nicolás Luna Niño</div>
+<div style=&quot;font-size:0.85em; margin-bottom:0.5em;&quot;>Bioinformatician &amp; Data Analyst</div>
+<a href=&quot;https://github.com/NicoLN-25&quot;>GitHub</a> |
+<a href=&quot;mailto:correo@example.com&quot;>Email</a>
+" class="quarto-navigation-tool px-1" aria-label="<img src=&quot;assets/img/nicolas.jpg&quot; style=&quot;width:100px; border-radius:50%; margin-bottom:0.5em;&quot;>
+<div style=&quot;font-weight:bold;&quot;>Nicolás Luna Niño</div>
+<div style=&quot;font-size:0.85em; margin-bottom:0.5em;&quot;>Bioinformatician &amp; Data Analyst</div>
+<a href=&quot;https://github.com/NicoLN-25&quot;>GitHub</a> |
+<a href=&quot;mailto:correo@example.com&quot;>Email</a>
+"><i class="bi bi-none"></i></a>
+</div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./CV.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Curriculum vitae</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Projects.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Projects</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Publications.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Publications</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Skills.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Skills</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Table of Contents</h2>
    
   <ul>
-  <li><a href="#personal-porfile" id="toc-personal-porfile" class="nav-link active" data-scroll-target="#personal-porfile">Personal porfile</a></li>
+  <li><a href="#personal-porfile-and-research-interests" id="toc-personal-porfile-and-research-interests" class="nav-link active" data-scroll-target="#personal-porfile-and-research-interests">Personal porfile and Research interests</a></li>
   <li><a href="#formal-education" id="toc-formal-education" class="nav-link" data-scroll-target="#formal-education">Formal education</a>
   <ul class="collapse">
   <li><a href="#courses-and-certificates" id="toc-courses-and-certificates" class="nav-link" data-scroll-target="#courses-and-certificates">Courses and Certificates</a></li>
@@ -158,8 +218,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="personal-porfile" class="level2">
-<h2 class="anchored" data-anchor-id="personal-porfile">Personal porfile</h2>
+<section id="personal-porfile-and-research-interests" class="level2">
+<h2 class="anchored" data-anchor-id="personal-porfile-and-research-interests">Personal porfile and Research interests</h2>
 <p>Biologist and Master in Natural Sciences with a passion for the world of microbial communities and the use of bioinformatics as a tool for researching the biological and evolutionary features of different microorganisms.</p>
 <p><a href="assets/CV_NLN.pdf" class="btn btn-primary" target="_blank">PDF Scientific CV</a></p>
 <hr>

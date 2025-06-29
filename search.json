@@ -11,48 +11,76 @@
     "href": "Projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Geographic and geospatial analyses of COVID-19 in Colombia: Trends in case distribution, recovery, and mortality (2023–2024)\nThis project consists in an interactive dashboard that allow to explore XXXXXX\nObjectives of the analysis:\n\nExaminar las dinámicas casos positivos de COVID-19, recuperaciones, y muertes a nivel geográfico, demográfico y clínico durante los años 2023-2024\nVisualizar dinámicas mensuales y anuales\nCalcular KPIs como fallecimientos, recuperaciones y casos activos\n\nTools employed:\n\nPower BI Desktop\nDAX\nExcel\n\n\n\n\n  ❮\n\n  \n    \n      \n      \n      \n      \n    \n  \n\n  ❯\n\n\n\nFiles\n📋 Informe (.pdf)\n📥 Descargar el archivo Power BI (.pbix)\n📗 Descargar Dataset (.xlsx)"
+    "text": "Here\n\n\nGeographic and geospatial analyses of COVID-19 in Colombia: Trends in case distribution, recovery, and mortality (2023–2024)\nThis project consists in an interactive dashboard that allow to explore the evolution of cases, recovering, and deaths at geographic (Departments and Municipalities), demographic (Age, Sex, ethnic group), and clinic (patient status and type of infection) level.\nObjectives of the analysis:\n\nExaminar las dinámicas casos positivos de COVID-19, recuperaciones, y muertes a nivel geográfico, demográfico y clínico durante los años 2023-2024\nVisualizar dinámicas mensuales y anuales\nCalcular KPIs como fallecimientos, recuperaciones y casos activos\n\n\n\n\n  ❮\n\n  \n    \n      \n      \n      \n      \n    \n  \n\n  ❯\n\n\n\nFiles\n📋 Informe (.pdf)\n📥 Descargar el archivo Power BI (.pbix)\n📗 Descargar Dataset (.xlsx)",
+    "crumbs": [
+      "Home",
+      "Projects"
+    ]
   },
   {
     "objectID": "Projects.html#data-analysis-projects",
     "href": "Projects.html#data-analysis-projects",
     "title": "Projects",
     "section": "",
-    "text": "Geographic and geospatial analyses of COVID-19 in Colombia: Trends in case distribution, recovery, and mortality (2023–2024)\nThis project consists in an interactive dashboard that allow to explore XXXXXX\nObjectives of the analysis:\n\nExaminar las dinámicas casos positivos de COVID-19, recuperaciones, y muertes a nivel geográfico, demográfico y clínico durante los años 2023-2024\nVisualizar dinámicas mensuales y anuales\nCalcular KPIs como fallecimientos, recuperaciones y casos activos\n\nTools employed:\n\nPower BI Desktop\nDAX\nExcel\n\n\n\n\n  ❮\n\n  \n    \n      \n      \n      \n      \n    \n  \n\n  ❯\n\n\n\nFiles\n📋 Informe (.pdf)\n📥 Descargar el archivo Power BI (.pbix)\n📗 Descargar Dataset (.xlsx)"
+    "text": "Here\n\n\nGeographic and geospatial analyses of COVID-19 in Colombia: Trends in case distribution, recovery, and mortality (2023–2024)\nThis project consists in an interactive dashboard that allow to explore the evolution of cases, recovering, and deaths at geographic (Departments and Municipalities), demographic (Age, Sex, ethnic group), and clinic (patient status and type of infection) level.\nObjectives of the analysis:\n\nExaminar las dinámicas casos positivos de COVID-19, recuperaciones, y muertes a nivel geográfico, demográfico y clínico durante los años 2023-2024\nVisualizar dinámicas mensuales y anuales\nCalcular KPIs como fallecimientos, recuperaciones y casos activos\n\n\n\n\n  ❮\n\n  \n    \n      \n      \n      \n      \n    \n  \n\n  ❯\n\n\n\nFiles\n📋 Informe (.pdf)\n📥 Descargar el archivo Power BI (.pbix)\n📗 Descargar Dataset (.xlsx)",
+    "crumbs": [
+      "Home",
+      "Projects"
+    ]
   },
   {
     "objectID": "CV.html",
     "href": "CV.html",
     "title": "Curriculum vitae",
     "section": "",
-    "text": "Biologist and Master in Natural Sciences with a passion for the world of microbial communities and the use of bioinformatics as a tool for researching the biological and evolutionary features of different microorganisms.\nPDF Scientific CV"
+    "text": "Biologist and Master in Natural Sciences with a passion for the world of microbial communities and the use of bioinformatics as a tool for researching the biological and evolutionary features of different microorganisms.\nPDF Scientific CV",
+    "crumbs": [
+      "Home",
+      "Curriculum vitae"
+    ]
   },
   {
-    "objectID": "CV.html#personal-porfile",
-    "href": "CV.html#personal-porfile",
+    "objectID": "CV.html#personal-porfile-and-research-interests",
+    "href": "CV.html#personal-porfile-and-research-interests",
     "title": "Curriculum vitae",
     "section": "",
-    "text": "Biologist and Master in Natural Sciences with a passion for the world of microbial communities and the use of bioinformatics as a tool for researching the biological and evolutionary features of different microorganisms.\nPDF Scientific CV"
+    "text": "Biologist and Master in Natural Sciences with a passion for the world of microbial communities and the use of bioinformatics as a tool for researching the biological and evolutionary features of different microorganisms.\nPDF Scientific CV",
+    "crumbs": [
+      "Home",
+      "Curriculum vitae"
+    ]
   },
   {
     "objectID": "CV.html#formal-education",
     "href": "CV.html#formal-education",
     "title": "Curriculum vitae",
     "section": "Formal education",
-    "text": "Formal education\n\nMaster of Sciences (M.Sc.) in Natural Sciences\nUniversidad del Rosario, Bogotá, Colombia\nBachelor of Sciences (B.Sc.) in Biology\nUniversidad del Rosario, Bogotá, Colombia\nDisciplinary mentions:\n\nHealth, Environment and Society\nEvolution and Molecular Biology\n\n\n\nCourses and Certificates\n\nWeb Course in Fundamentals of Artificial Intelligence\nCODERHOUSE, Argentina\nWeb Course in Data Anlystics\nCODERHOUSE, Argentina\nShort Web Course in Recombinant Protein Expression Platforms Applied to the study of animal Venoms\nLatin American Biotechnology Center (CABBIO)"
+    "text": "Formal education\n\nMaster of Sciences (M.Sc.) in Natural Sciences\nUniversidad del Rosario, Bogotá, Colombia\nBachelor of Sciences (B.Sc.) in Biology\nUniversidad del Rosario, Bogotá, Colombia\nDisciplinary mentions:\n\nHealth, Environment and Society\nEvolution and Molecular Biology\n\n\n\nCourses and Certificates\n\nWeb Course in Fundamentals of Artificial Intelligence\nCODERHOUSE, Argentina\nWeb Course in Data Anlystics\nCODERHOUSE, Argentina\nShort Web Course in Recombinant Protein Expression Platforms Applied to the study of animal Venoms\nLatin American Biotechnology Center (CABBIO)",
+    "crumbs": [
+      "Home",
+      "Curriculum vitae"
+    ]
   },
   {
     "objectID": "CV.html#research-experience",
     "href": "CV.html#research-experience",
     "title": "Curriculum vitae",
     "section": "Research Experience",
-    "text": "Research Experience\nResearch Assistant – GIMUR / CIMBIUR\nUniversidad del Rosario (2021–2024)\n\nParticipated in projects on genomic surveillance of emerging pathogens, including SARS-CoV-2 and Monkeypox virus.\nCharacterized the microbial ecology of various biological systems using next-generation sequencing (NGS).\nConducted molecular and bioinformatic analyses on different microbes using Sanger, Illumina or Oxford Nanopore Technologies (ONT)"
+    "text": "Research Experience\nResearch Assistant – GIMUR / CIMBIUR\nUniversidad del Rosario (2021–2024)\n\nParticipated in projects on genomic surveillance of emerging pathogens, including SARS-CoV-2 and Monkeypox virus.\nCharacterized the microbial ecology of various biological systems using next-generation sequencing (NGS).\nConducted molecular and bioinformatic analyses on different microbes using Sanger, Illumina or Oxford Nanopore Technologies (ONT)",
+    "crumbs": [
+      "Home",
+      "Curriculum vitae"
+    ]
   },
   {
     "objectID": "CV.html#research-interests",
     "href": "CV.html#research-interests",
     "title": "Curriculum vitae",
     "section": "Research Interests",
-    "text": "Research Interests\n\nMicrobial ecology and evolution\nComputational Metagenomics\nEpidemiology and zoonotic diseases\nData analytics in life sciences"
+    "text": "Research Interests\n\nMicrobial ecology and evolution\nComputational Metagenomics\nEpidemiology and zoonotic diseases\nData analytics in life sciences",
+    "crumbs": [
+      "Home",
+      "Curriculum vitae"
+    ]
   }
 ]
