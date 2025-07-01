@@ -67,6 +67,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 
 <link rel="stylesheet" href="styles.css">
@@ -134,43 +135,33 @@ ul.task-list li input[type="checkbox"] {
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
-<div class="sidebar-author" style="margin-top: 2em; font-size: 0.9em; text-align: left;">
-  <div style="text-align: center;">
-    <img src="assets/img/nicolas.jpg" alt="Nicolás Luna Niño" style="width:100px; height:100px; border-radius:50%; object-fit:cover; margin-bottom: 0.5em;">
-    <div style="font-weight: bold;">Nicolás Luna Niño</div>
-    <div style="font-size: 0.85em; margin-bottom: 1em;">Bioinformatician &amp; Data Analyst</div>
-  </div>
-  <ul style="list-style: none; padding: 0; margin: 0;">
-    <li style="margin-bottom: 0.4em;">
-      <i class="fas fa-phone-alt"></i>
-      <a href="tel:+57 3175058578">(+57) 317 505 8578</a>
-    </li>
-    <li style="margin-bottom: 0.4em;">
-      <i class="fas fa-envelope"></i>
-      <a href="mailto:nicolas.luna@urosario.edu.co">nicolas.luna@urosario.edu.co</a>
-    </li>
-    <li style="margin-bottom: 0.4em;">
-      <i class="fas fa-map-marker-alt"></i>
-      Bogotá D.C, Colombia
-    </li>
-    <li style="margin-bottom: 0.4em;">
-      <i class="fab fa-github"></i>
-      <a href="https://github.com/NicoLN-25" target="_blank">GitHub</a>
-    </li>
-    <li style="margin-bottom: 0.4em;">
-      <i class="ai ai-google-scholar"></i>
-      <a href="https://scholar.google.com" target="_blank">Google Scholar</a>
-    </li>
-    <li style="margin-bottom: 0.4em;">
-      <i class="fab fa-linkedin"></i>
-      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-    </li>
-    <li style="margin-bottom: 0.4em;">
-      <i class="ai ai-researchgate"></i>
-      <a href="https://www.researchgate.net" target="_blank">ResearchGate</a>
-    </li>
-  </ul>
-</div>
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+    const tocSidebar = document.querySelector("#quarto-margin-sidebar nav");
+
+    if (tocSidebar) {
+      const authorBlock = document.createElement("div");
+      authorBlock.innerHTML = `
+        <div style="text-align:center; margin-top:2em;">
+          <img src="assets/img/nicolas.jpg" alt="Nicolás Luna Niño"
+               style="width:120px; border-radius:50%; margin-bottom:0.5em;" />
+          <div style="font-weight:bold;">Nicolás Luna Niño</div>
+          <div style="font-size:0.85em; margin-bottom:1em;">Bioinformatician & Data Analyst</div>
+          <ul style="list-style:none; padding:0; font-size:0.85em; text-align:left; margin:0 auto; display:inline-block;">
+            <li style="margin-bottom:0.3em;"><i class="fa-solid fa-location-dot" style="width:20px;"></i> Bogotá D.C, Colombia</li>
+            <li style="margin-bottom:0.3em;"><i class="fa-solid fa-phone" style="width:20px;"></i> (+57) 3175058578</li>
+            <li style="margin-bottom:0.3em;"><i class="fa-solid fa-envelope" style="width:20px;"></i> nicolas.luna@urosario.edu.co</a></li>
+            <li style="margin-bottom:0.3em;"><i class="fa-brands fa-github" style="width:20px;"></i> <a href="https://github.com/NicoLN-25" target="_blank">GitHub</a></li>
+            <li style="margin-bottom:0.3em;"><i class="fa-solid fa-graduation-cap" style="width:20px;"></i> <a href="https://scholar.google.com/citations?user=-nDhqZ4AAAAJ&hl=es" target="_blank">Google Scholar</a></li>
+            <li style="margin-bottom:0.3em;"><i class="fa-brands fa-linkedin" style="width:20px;"></i> <a href="https://www.linkedin.com/in/nicolas-luna-nino/" target="_blank">LinkedIn</a></li>
+            <li><i class="fa-solid fa-flask" style="width:20px;"></i> <a href="https://www.researchgate.net/profile/Nicolas-Luna-Nino-2/research" target="_blank">ResearchGate</a></li>
+          </ul>
+        </div>
+      `;
+      tocSidebar.insertAdjacentElement("afterend", authorBlock);
+    }
+  });
+</script>
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
