@@ -1,57 +1,78 @@
 [
   {
+    "objectID": "Skills.html",
+    "href": "Skills.html",
+    "title": "Skills",
+    "section": "",
+    "text": "Nicolás Luna Niño\n    Bioinformatician & Data Analyst\n  \n  \n    \n      \n      (+57) 317 505 8578\n    \n    \n      \n      nicolas.luna@urosario.edu.co\n    \n    \n      \n      Bogotá D.C, Colombia\n    \n    \n      \n      GitHub\n    \n    \n      \n      Google Scholar\n    \n    \n      \n      LinkedIn\n    \n    \n      \n      ResearchGate"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Nicolás Luna Niño\n    Bioinformatician & Data Analyst\n  \n  \n    \n      \n      (+57) 317 505 8578\n    \n    \n      \n      nicolas.luna@urosario.edu.co\n    \n    \n      \n      Bogotá D.C, Colombia\n    \n    \n      \n      GitHub\n    \n    \n      \n      Google Scholar\n    \n    \n      \n      LinkedIn\n    \n    \n      \n      ResearchGate"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Nicolás Luna Niño",
     "section": "",
-    "text": "👋 Welcome\nI’m a Bioinformatician and Data Analyst with experience in microbiome analysis, ecological modeling, and health data visualisation. I combine scripting in R and Bash with strong analytical workflows to generate reproducible insights from complex datasets.\n📍 Based in Colombia — seeking PhD opportunities and data-intensive collaborations."
+    "text": "Nicolás Luna Niño\n    Bioinformatician & Data Analyst\n  \n  \n    \n      \n      (+57) 317 505 8578\n    \n    \n      \n      nicolas.luna@urosario.edu.co\n    \n    \n      \n      Bogotá D.C, Colombia\n    \n    \n      \n      GitHub\n    \n    \n      \n      Google Scholar\n    \n    \n      \n      LinkedIn\n    \n    \n      \n      ResearchGate\n    \n  \n\n\n\n\n\n\n👋 Welcome\nI’m a Bioinformatician and Data Analyst with experience in microbiome analysis, ecological modeling, and health data visualisation. I combine scripting in R and Bash with strong analytical workflows to generate reproducible insights from complex datasets.\n📍 Based in Colombia — seeking PhD opportunities and data-intensive collaborations."
   },
   {
     "objectID": "Projects.html",
     "href": "Projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Here\n\n\nGeographic and geospatial analyses of COVID-19 in Colombia: Trends in case distribution, recovery, and mortality (2023–2024)\nThis project consists in an interactive dashboard that allow to explore the evolution of cases, recovering, and deaths at geographic (Departments and Municipalities), demographic (Age, Sex, ethnic group), and clinic (patient status and type of infection) level.\nObjectives of the analysis:\n\nExaminar las dinámicas casos positivos de COVID-19, recuperaciones, y muertes a nivel geográfico, demográfico y clínico durante los años 2023-2024\nVisualizar dinámicas mensuales y anuales\nCalcular KPIs como fallecimientos, recuperaciones y casos activos\n\n\n\n\n  ❮\n\n  \n    \n      \n      \n      \n      \n    \n  \n\n  ❯\n\n\n\nFiles\n📋 Informe (.pdf)\n📥 Descargar el archivo Power BI (.pbix)\n📗 Descargar Dataset (.xlsx)"
+    "text": "Nicolás Luna Niño\n    Bioinformatician & Data Analyst\n  \n  \n    \n      \n      (+57) 317 505 8578\n    \n    \n      \n      nicolas.luna@urosario.edu.co\n    \n    \n      \n      Bogotá D.C, Colombia\n    \n    \n      \n      GitHub\n    \n    \n      \n      Google Scholar\n    \n    \n      \n      LinkedIn\n    \n    \n      \n      ResearchGate"
   },
   {
     "objectID": "Projects.html#data-analysis-projects",
     "href": "Projects.html#data-analysis-projects",
     "title": "Projects",
+    "section": "Data Analysis Projects",
+    "text": "Data Analysis Projects\nHere\n\nProject I\nGeographic and geospatial analyses of COVID-19 in Colombia: Trends in case distribution, recovery, and mortality (2023–2024)\nThis project consists in an interactive dashboard that allow to explore the evolution of cases, recovering, and deaths at geographic (Departments and Municipalities), demographic (Age, Sex, ethnic group), and clinic (patient status and type of infection) level.\nObjectives of the analysis:\n\nExaminar las dinámicas casos positivos de COVID-19, recuperaciones, y muertes a nivel geográfico, demográfico y clínico durante los años 2023-2024\nVisualizar dinámicas mensuales y anuales\nCalcular KPIs como fallecimientos, recuperaciones y casos activos\n\n\n\n\n  ❮\n\n  \n    \n      \n      \n      \n      \n    \n  \n\n  ❯\n\n\n\nFiles\n📋 Informe (.pdf)\n📥 Descargar el archivo Power BI (.pbix)\n📗 Descargar Dataset (.xlsx)"
+  },
+  {
+    "objectID": "Publications.html",
+    "href": "Publications.html",
+    "title": "Publications",
     "section": "",
-    "text": "Here\n\n\nGeographic and geospatial analyses of COVID-19 in Colombia: Trends in case distribution, recovery, and mortality (2023–2024)\nThis project consists in an interactive dashboard that allow to explore the evolution of cases, recovering, and deaths at geographic (Departments and Municipalities), demographic (Age, Sex, ethnic group), and clinic (patient status and type of infection) level.\nObjectives of the analysis:\n\nExaminar las dinámicas casos positivos de COVID-19, recuperaciones, y muertes a nivel geográfico, demográfico y clínico durante los años 2023-2024\nVisualizar dinámicas mensuales y anuales\nCalcular KPIs como fallecimientos, recuperaciones y casos activos\n\n\n\n\n  ❮\n\n  \n    \n      \n      \n      \n      \n    \n  \n\n  ❯\n\n\n\nFiles\n📋 Informe (.pdf)\n📥 Descargar el archivo Power BI (.pbix)\n📗 Descargar Dataset (.xlsx)"
+    "text": "Nicolás Luna Niño\n    Bioinformatician & Data Analyst\n  \n  \n    \n      \n      (+57) 317 505 8578\n    \n    \n      \n      nicolas.luna@urosario.edu.co\n    \n    \n      \n      Bogotá D.C, Colombia\n    \n    \n      \n      GitHub\n    \n    \n      \n      Google Scholar\n    \n    \n      \n      LinkedIn\n    \n    \n      \n      ResearchGate"
   },
   {
     "objectID": "CV.html",
     "href": "CV.html",
-    "title": "Curriculum vitae",
+    "title": "Portfolio",
     "section": "",
-    "text": "Biologist and Master in Natural Sciences with a passion for the world of microbial communities and the use of bioinformatics as a tool for researching the biological and evolutionary features of different microorganisms.\nPDF Scientific CV"
+    "text": "Nicolás Luna Niño\n    Bioinformatician & Data Analyst\n  \n  \n    \n      \n      (+57) 317 505 8578\n    \n    \n      \n      nicolas.luna@urosario.edu.co\n    \n    \n      \n      Bogotá D.C, Colombia\n    \n    \n      \n      GitHub\n    \n    \n      \n      Google Scholar\n    \n    \n      \n      LinkedIn\n    \n    \n      \n      ResearchGate"
   },
   {
     "objectID": "CV.html#personal-porfile-and-research-interests",
     "href": "CV.html#personal-porfile-and-research-interests",
-    "title": "Curriculum vitae",
-    "section": "",
-    "text": "Biologist and Master in Natural Sciences with a passion for the world of microbial communities and the use of bioinformatics as a tool for researching the biological and evolutionary features of different microorganisms.\nPDF Scientific CV"
+    "title": "Portfolio",
+    "section": "Personal porfile and Research interests",
+    "text": "Personal porfile and Research interests\nBiologist and Master in Natural Sciences with a passion for the world of microbial communities and the use of bioinformatics as a tool for researching the biological and evolutionary features of different microorganisms.\nPDF Scientific CV"
   },
   {
     "objectID": "CV.html#formal-education",
     "href": "CV.html#formal-education",
-    "title": "Curriculum vitae",
+    "title": "Portfolio",
     "section": "Formal education",
     "text": "Formal education\n\nMaster of Sciences (M.Sc.) in Natural Sciences\nUniversidad del Rosario, Bogotá, Colombia\nBachelor of Sciences (B.Sc.) in Biology\nUniversidad del Rosario, Bogotá, Colombia\nDisciplinary mentions:\n\nHealth, Environment and Society\nEvolution and Molecular Biology\n\n\n\nCourses and Certificates\n\nWeb Course in Fundamentals of Artificial Intelligence\nCODERHOUSE, Argentina\nWeb Course in Data Anlystics\nCODERHOUSE, Argentina\nShort Web Course in Recombinant Protein Expression Platforms Applied to the study of animal Venoms\nLatin American Biotechnology Center (CABBIO)"
   },
   {
     "objectID": "CV.html#research-experience",
     "href": "CV.html#research-experience",
-    "title": "Curriculum vitae",
+    "title": "Portfolio",
     "section": "Research Experience",
     "text": "Research Experience\nResearch Assistant – GIMUR / CIMBIUR\nUniversidad del Rosario (2021–2024)\n\nParticipated in projects on genomic surveillance of emerging pathogens, including SARS-CoV-2 and Monkeypox virus.\nCharacterized the microbial ecology of various biological systems using next-generation sequencing (NGS).\nConducted molecular and bioinformatic analyses on different microbes using Sanger, Illumina or Oxford Nanopore Technologies (ONT)"
   },
   {
     "objectID": "CV.html#research-interests",
     "href": "CV.html#research-interests",
-    "title": "Curriculum vitae",
+    "title": "Portfolio",
     "section": "Research Interests",
     "text": "Research Interests\n\nMicrobial ecology and evolution\nComputational Metagenomics\nEpidemiology and zoonotic diseases\nData analytics in life sciences"
   }
