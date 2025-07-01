@@ -164,7 +164,7 @@ ul.task-list li input[type="checkbox"] {
 
 </main> <!-- /main -->
 <div id="author-block" style="display: none;">
-  <div style="text-align: center; margin-top: 1em;">
+  <div style="text-align: center; margin-top: 1.5em;">
     <img src="assets/img/nicolas.jpg" style="width: 90px; border-radius: 50%; margin-bottom: 0.5em;">
     <div style="font-weight: bold;">Nicolás Luna Niño</div>
     <div style="font-size: 0.85em;">Bioinformatician &amp; Data Analyst</div>
@@ -177,14 +177,15 @@ ul.task-list li input[type="checkbox"] {
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    const toc = document.querySelector(".quarto-sidebar-secondary .toc");
+    const toc = document.querySelector("nav#TOC");
     const block = document.getElementById("author-block");
 
     if (toc && block) {
       block.style.display = "block";
       toc.appendChild(block);
+      console.log("✅ Autor insertado en TOC.");
     } else {
-      console.log("❌ TOC o bloque no encontrado.");
+      console.warn("⚠️ TOC o bloque de autor no encontrado.");
     }
   });
 </script>
