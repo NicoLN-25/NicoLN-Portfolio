@@ -67,7 +67,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&amp;family=Poppins:wght@500;700&amp;display=swap" rel="stylesheet">
 
 
 <link rel="stylesheet" href="styles.css">
@@ -95,12 +94,12 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page"> 
+    <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./CV.html"> 
-<span class="menu-text">CV</span></a>
+    <a class="nav-link active" href="./CV.html" aria-current="page"> 
+<span class="menu-text">Professional Profile</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./Projects.html"> 
@@ -121,7 +120,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./CV.html">Curriculum vitae</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Curriculum vitae</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -131,53 +130,6 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-        <div class="sidebar-tools-main">
-    <a href="" title="<img src=&quot;assets/img/nicolas.jpg&quot; style=&quot;width:100px; border-radius:50%; margin-bottom:0.5em;&quot;>
-<div style=&quot;font-weight:bold;&quot;>Nicolás Luna Niño</div>
-<div style=&quot;font-size:0.85em; margin-bottom:0.5em;&quot;>Bioinformatician &amp; Data Analyst</div>
-<a href=&quot;https://github.com/NicoLN-25&quot;>GitHub</a> |
-<a href=&quot;mailto:correo@example.com&quot;>Email</a>
-" class="quarto-navigation-tool px-1" aria-label="<img src=&quot;assets/img/nicolas.jpg&quot; style=&quot;width:100px; border-radius:50%; margin-bottom:0.5em;&quot;>
-<div style=&quot;font-weight:bold;&quot;>Nicolás Luna Niño</div>
-<div style=&quot;font-size:0.85em; margin-bottom:0.5em;&quot;>Bioinformatician &amp; Data Analyst</div>
-<a href=&quot;https://github.com/NicoLN-25&quot;>GitHub</a> |
-<a href=&quot;mailto:correo@example.com&quot;>Email</a>
-"><i class="bi bi-none"></i></a>
-</div>
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./about.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">About</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./CV.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Curriculum vitae</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./Projects.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Projects</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./Publications.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Publications</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./Skills.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Skills</span></a>
-  </div>
-</li>
-    </ul>
-    </div>
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
@@ -272,6 +224,31 @@ Universidad del Rosario (2021–2024)</p>
 </section>
 
 </main> <!-- /main -->
+<div id="author-block" style="display: none;">
+  <div style="text-align: center; margin-top: 1em;">
+    <img src="assets/img/nicolas.jpg" style="width: 90px; border-radius: 50%; margin-bottom: 0.5em;">
+    <div style="font-weight: bold;">Nicolás Luna Niño</div>
+    <div style="font-size: 0.85em;">Bioinformatician &amp; Data Analyst</div>
+    <div style="margin-top: 0.3em;">
+      <a href="https://github.com/NicoLN-25" target="_blank">GitHub</a> |
+      <a href="mailto:correo@example.com">Email</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toc = document.querySelector(".quarto-sidebar-secondary .toc");
+    const block = document.getElementById("author-block");
+
+    if (toc && block) {
+      block.style.display = "block";
+      toc.appendChild(block);
+    } else {
+      console.log("❌ TOC o bloque no encontrado.");
+    }
+  });
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
