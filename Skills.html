@@ -156,45 +156,57 @@ ul.task-list li input[type="checkbox"] {
 
 </main> <!-- /main -->
 <!-- sidebar-author.html -->
-<div id="custom-author-block" style="display:none; font-size:0.85em; text-align:center; margin:1em 0;">
-  <img src="assets/img/nicolas.jpg" alt="Nicolás Luna Niño" style="width:130px; border-radius:50%; margin-bottom:0.5em;">
-  <div style="font-weight:bold;">Nicolás Luna Niño</div>
-  <div style="margin-bottom:0.7em;">Bioinformatician &amp; Data Analyst</div>
+<div id="custom-author-block" style="display:none; font-size:0.9em; text-align:center; margin-bottom:1em;">
+  <img src="assets/img/nicolas.jpg" alt="Nicolás Luna Niño" style="width:100px; border-radius:50%; margin-bottom:0.5em;">
+  <div style="font-weight:bold; margin-bottom:0.2em;">Nicolás Luna Niño</div>
+  <div style="margin-bottom:1em;">Bioinformatician &amp; Data Analyst</div>
 
   <div style="text-align:left; line-height:1.4;">
-    <div style="font-weight:bold; margin-bottom:0.3em;">📍 Contact</div>
+    <div style="font-weight:bold; margin-bottom:0.3em;">Research Links</div>
     <ul style="list-style:none; padding-left:1em; margin:0 0 1em 0;">
-      <li><i class="fa fa-location-dot"></i> Bogotá D.C, Colombia</li>
-      <li><i class="fa fa-phone"></i> (+57) 3175058578</li>
-      <li><i class="fa fa-envelope"></i> nico250999@gmail.com</li>
+      <li>
+        <i class="fa fa-graduation-cap"></i>
+        <a href="https://scholar.google.com/" target="_blank">Google Scholar</a>
+      </li>
+      <li>
+        <i class="fa fa-flask"></i>
+        <a href="https://www.researchgate.net/" target="_blank">ResearchGate</a>
+      </li>
+      <li>
+        <i class="fa fa-id-badge"></i>
+        <a href="https://orcid.org/" target="_blank">ORCID</a>
+      </li>
     </ul>
 
-    <div style="font-weight:bold; margin-bottom:0.3em;">🔗 Other Links</div>
-    <ul style="list-style:none; padding-left:1em; margin:0 0 1em 0;">
-      <li><i class="fa fa-github"></i> <a href="https://github.com/NicoLN-25" target="_blank">GitHub</a></li>
-      <li><i class="fa fa-linkedin"></i> <a href="https://linkedin.com/in/usuario" target="_blank">LinkedIn</a></li>
-    </ul>
-
-    <div style="font-weight:bold; margin-bottom:0.3em;">🧪 Research Links</div>
+    <div style="font-weight:bold; margin-bottom:0.3em;">Other Links</div>
     <ul style="list-style:none; padding-left:1em; margin:0;">
-      <li><i class="fa fa-graduation-cap"></i> <a href="https://scholar.google.com/" target="_blank">Google Scholar</a></li>
-      <li><i class="fa fa-flask"></i> <a href="https://www.researchgate.net/" target="_blank">ResearchGate</a></li>
-      <li><i class="fa fa-id-badge"></i> <a href="https://orcid.org/" target="_blank">ORCID</a></li>
+      <li>
+        <i class="fa fa-github"></i>
+        <a href="https://github.com/NicoLN-25" target="_blank">GitHub</a>
+      </li>
+      <li><i class="fa fa-envelope"></i> nico250999@gmail.com</li>
+      <li>
+        <i class="fa fa-linkedin"></i>
+        <a href="https://linkedin.com/in/usuario" target="_blank">LinkedIn</a>
+      </li>
     </ul>
   </div>
 </div>
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    const leftSidebar = document.querySelector("#quarto-sidebar .sidebar-tools-main");
-    const authorBlock = document.getElementById("custom-author-block");
-    if (leftSidebar && authorBlock) {
-      authorBlock.style.display = "block";
-      leftSidebar.insertAdjacentElement("beforeend", authorBlock);
+    // Selector correcto del panel izquierdo
+    const sidebarMain = document.querySelector(
+      "#quarto-sidebar .sidebar-tools-main"
+    );
+    const block = document.getElementById("custom-author-block");
+    if (sidebarMain && block) {
+      block.style.display = "block";
+      // Inserta tu bloque AL PRINCIPIO del sidebar izquierdo
+      sidebarMain.insertAdjacentElement("afterbegin", block);
     }
   });
 </script>
-
 
 
 <script id="quarto-html-after-body" type="application/javascript">
