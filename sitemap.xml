@@ -1,27 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://NicoLN-25.github.io/NicoLN-Portfolio/Skills.html</loc>
-    <lastmod>2025-06-26T18:05:00.089Z</lastmod>
+    <loc>https://NicoLN-25.github.io/NicoLN-Portfolio/author.html</loc>
+    <lastmod>2025-07-02T19:48:30.288Z</lastmod>
   </url>
   <url>
-    <loc>https://NicoLN-25.github.io/NicoLN-Portfolio/about.html</loc>
-    <lastmod>2025-07-01T17:41:07.079Z</lastmod>
-  </url>
-  <url>
-    <loc>https://NicoLN-25.github.io/NicoLN-Portfolio/index.html</loc>
-    <lastmod>2025-06-27T00:42:38.775Z</lastmod>
-  </url>
-  <url>
-    <loc>https://NicoLN-25.github.io/NicoLN-Portfolio/Projects.html</loc>
-    <lastmod>2025-06-29T02:00:23.735Z</lastmod>
+    <loc>https://NicoLN-25.github.io/NicoLN-Portfolio/CV.html</loc>
+    <lastmod>2025-07-02T03:17:39.919Z</lastmod>
   </url>
   <url>
     <loc>https://NicoLN-25.github.io/NicoLN-Portfolio/Publications.html</loc>
     <lastmod>2025-06-26T18:05:00.089Z</lastmod>
   </url>
   <url>
-    <loc>https://NicoLN-25.github.io/NicoLN-Portfolio/CV.html</loc>
-    <lastmod>2025-07-01T20:53:25.174Z</lastmod>
+    <loc>https://NicoLN-25.github.io/NicoLN-Portfolio/Projects.html</loc>
+    <lastmod>2025-06-29T02:00:23.735Z</lastmod>
+  </url>
+  <url>
+    <loc>https://NicoLN-25.github.io/NicoLN-Portfolio/index.html</loc>
+    <lastmod>2025-06-27T00:42:38.775Z</lastmod>
+  </url>
+  <url>
+    <loc>https://NicoLN-25.github.io/NicoLN-Portfolio/about.html</loc>
+    <lastmod>2025-07-01T17:41:07.079Z</lastmod>
+  </url>
+  <url>
+    <loc>https://NicoLN-25.github.io/NicoLN-Portfolio/Skills.html</loc>
+    <lastmod>2025-06-26T18:05:00.089Z</lastmod>
   </url>
 </urlset>

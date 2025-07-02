@@ -13,3 +13,23 @@ h1, h2, h3, h4, h5, h6 {
   color: #111;
   line-height: 1.3;
 }
+
+
+#custom-author-block {
+  position: fixed;
+  top: 80px;           /* espacio desde el top, bajo tu navbar */
+  left: 1rem;          /* distancia del borde izquierdo */
+  width: 200px;        /* ancho del bloque */
+  background: white;   /* o transparente */
+  padding: 0.5em;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+/* Ocultar en pantallas pequeñas si lo deseas */
+@media (max-width: 767px) {
+  #custom-author-block {
+    display: none;
+  }
+}
