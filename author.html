@@ -151,59 +151,43 @@ ul.task-list li input[type="checkbox"] {
 
 
 </main> <!-- /main -->
-<!-- sidebar-author.html -->
-<div id="custom-author-block" style="display:none; font-size:0.9em; text-align:center; margin-bottom:1em;">
-  <img src="assets/img/nicolas.jpg" alt="Nicolás Luna Niño" style="width:100px; border-radius:50%; margin-bottom:0.5em;">
-  <div style="font-weight:bold; margin-bottom:0.2em;">Nicolás Luna Niño</div>
-  <div style="margin-bottom:1em;">Bioinformatician &amp; Data Analyst</div>
-
-  <div style="text-align:left; line-height:1.4;">
-    <div style="font-weight:bold; margin-bottom:0.3em;">Research Links</div>
-    <ul style="list-style:none; padding-left:1em; margin:0 0 1em 0;">
-      <li>
-        <i class="fa fa-graduation-cap"></i>
-        <a href="https://scholar.google.com/" target="_blank">Google Scholar</a>
-      </li>
-      <li>
-        <i class="fa fa-flask"></i>
-        <a href="https://www.researchgate.net/" target="_blank">ResearchGate</a>
-      </li>
-      <li>
-        <i class="fa fa-id-badge"></i>
-        <a href="https://orcid.org/" target="_blank">ORCID</a>
-      </li>
-    </ul>
-
-    <div style="font-weight:bold; margin-bottom:0.3em;">Other Links</div>
-    <ul style="list-style:none; padding-left:1em; margin:0;">
-      <li>
-        <i class="fa fa-github"></i>
-        <a href="https://github.com/NicoLN-25" target="_blank">GitHub</a>
-      </li>
-      <li><i class="fa fa-envelope"></i> nico250999@gmail.com</li>
-      <li>
-        <i class="fa fa-linkedin"></i>
-        <a href="https://linkedin.com/in/usuario" target="_blank">LinkedIn</a>
-      </li>
-    </ul>
-  </div>
-</div>
-
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    // Selector correcto del panel izquierdo
-    const sidebarMain = document.querySelector(
-      "#quarto-sidebar .sidebar-tools-main"
-    );
-    const block = document.getElementById("custom-author-block");
-    if (sidebarMain && block) {
-      block.style.display = "block";
-      // Inserta tu bloque AL PRINCIPIO del sidebar izquierdo
-      sidebarMain.insertAdjacentElement("afterbegin", block);
+  window.addEventListener("DOMContentLoaded", () => {
+    const tocSidebar = document.querySelector("#quarto-margin-sidebar nav");
+
+    if (tocSidebar) {
+      const authorBlock = document.createElement("div");
+      authorBlock.innerHTML = `
+        <div style="text-align:center; margin-top:2em;">
+          <img src="assets/img/nicolas.jpg" style="width:150px; border-radius:50%;" alt="NLN">
+          <div style="font-weight:bold">Nicolás Luna Niño</div>
+          <div style="font-size:0.85em; margin-bottom:1em;">Bioinformatician & Data Analyst</div>
+          <ul style="list-style:none; padding:0; font-size:0.85em; text-align:left; margin:0 auto; display:inline-block;">
+          
+          <li style="margin-bottom:0.3em;"><i class="fa-solid fa-location-dot" style="width:20px;"></i> Bogotá D.C, Colombia</li>
+          <li style="margin-bottom:0.3em;"><i class="fa-solid fa-phone" style="width:20px;"></i> (+57) 3175058578</li>
+          <li style="margin-bottom:0.3em;"><i class="fa-solid fa-envelope" style="width:25px;"></i>nico250999@gmail.com</li>
+          
+          <div class="link-section">
+            <div class="section-title"; div style="font-weight:bold">Links</div>
+              <ul>
+                <li style="margin-bottom:0.3em;"><i class="fa-brands fa-linkedin" style="width:20px;"></i> <a href="https://www.linkedin.com/in/nicolas-luna-nino/" target="_blank">LinkedIn</a></li>
+                <li style="margin-bottom:0.3em;"><i class="fa-brands fa-github" style="width:20px;"></i> <a href="https://github.com/NicoLN-25" target="_blank">GitHub</a></li>
+              </ul>
+            </div>
+            
+            <div class="link-section">
+            <div class="section-title"; div style="font-weight:bold">Research Links</div>
+              <ul>
+                <li style="margin-bottom:0.3em;"><i class="fa-solid fa-graduation-cap" style="width:20px;"></i> <a href="https://scholar.google.com/citations?user=-nDhqZ4AAAAJ&hl=es" target="_blank">Google Scholar</a></li>
+                <li><i class="fa-solid fa-flask" style="width:20px;"></i> <a href="https://www.researchgate.net/profile/Nicolas-Luna-Nino-2/research" target="_blank">ResearchGate</a></li>
+              </ul>
+            </div>
+      `;
+      tocSidebar.insertAdjacentElement("afterend", authorBlock);
     }
   });
 </script>
-
 
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
