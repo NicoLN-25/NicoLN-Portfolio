@@ -73,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-sidebar floating nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -103,36 +103,12 @@ ul.task-list li input[type="checkbox"] {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-    </div>
-  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-        <div class="sidebar-tools-main">
-    <a href="" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-none"></i></a>
-</div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of Contents</h2>
-   
-  <ul>
-  <li><a href="#welcome" id="toc-welcome" class="nav-link active" data-scroll-target="#welcome">👋 Welcome</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
@@ -143,6 +119,78 @@ ul.task-list li input[type="checkbox"] {
 <h1>👋 Welcome</h1>
 <p>I’m a <strong>Bioinformatician and Data Analyst</strong> with experience in microbiome analysis, ecological modeling, and health data visualisation. I combine scripting in R and Bash with strong analytical workflows to generate reproducible insights from complex datasets.</p>
 <p>📍 Based in Colombia — seeking PhD opportunities and data-intensive collaborations.</p>
+<style>
+.carousel-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.carousel-container {
+  position: relative;
+  width: 800px;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-image {
+  min-width: 100%;
+  object-fit: contain;
+}
+
+.carousel-btn {
+  background: rgba(0, 0, 0, 0.4);
+  border: none;
+  color: white;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+  display: flex;
+  line-height: 1 !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-btn:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+</style>
+
+<div class="carousel-wrapper">
+  <button class="carousel-btn" onclick="moveSlide(-1)">❮</button>
+
+  <div class="carousel-container">
+    <div class="carousel-track" id="carousel">
+      <img class="carousel-image" src="assets/data-analysis/covid-dashboard/Resume.png" alt="Resumen COVID">
+      <img class="carousel-image" src="assets/data-analysis/covid-dashboard/Active_Cases.png" alt="Casos Activos">
+      <img class="carousel-image" src="assets/data-analysis/covid-dashboard/Positive_Cases.png" alt="Casos Positivos">
+      <img class="carousel-image" src="assets/data-analysis/covid-dashboard/Recovered_Cases.png" alt="Casos Recuperados">
+    </div>
+  </div>
+
+  <button class="carousel-btn" onclick="moveSlide(1)">❯</button>
+</div>
+
+<script>
+let index = 0;
+function moveSlide(step) {
+  const track = document.getElementById('carousel');
+  const total = track.children.length;
+  index = (index + step + total) % total;
+  track.style.transform = `translateX(-${index * 100}%)`;
+}
+</script>
 
 
 </section>
