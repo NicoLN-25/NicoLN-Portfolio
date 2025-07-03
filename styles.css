@@ -1,9 +1,9 @@
 /* Tipografía general del cuerpo */
 body {
   font-family: 'Noto Sans', sans-serif;
-  font-size: 18px;
+  font-size: 17px;
   color: #333;
-  line-height: 1.6;
+  line-height: 1.3;
 }
 
 /* Títulos y encabezados */
@@ -11,25 +11,51 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   color: #111;
-  line-height: 1.3;
+  line-height: 1.5;
 }
 
-
-#custom-author-block {
-  position: fixed;
-  top: 80px;           /* espacio desde el top, bajo tu navbar */
-  left: 1rem;          /* distancia del borde izquierdo */
-  width: 200px;        /* ancho del bloque */
-  background: white;   /* o transparente */
-  padding: 0.5em;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  z-index: 1000;
+/* === Estilo general del TOC === */
+#TOC {
+  font-family: 'Noto Sans', sans-serif;  /* Cambia la fuente */
+  font-size: 18px;                      /* Cambia el tamaño del texto */
+  line-height: 1.6;                     /* Espaciado entre líneas */
+  padding-left: 1em;
+  padding-right: 1em;
+  color: #222;
 }
 
-/* Ocultar en pantallas pequeñas si lo deseas */
-@media (max-width: 767px) {
-  #custom-author-block {
-    display: none;
-  }
+/* === Título "Table of Contents" === */
+#TOC h2#toc-title {
+  font-size: 1em;
+  margin-bottom: 0.8em;
+  font-weight: bold;
+  color: #222;
+}
+
+/* === Lista del TOC === */
+#TOC ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+#TOC li {
+  margin-bottom: 0.5em;
+}
+
+/* === Enlaces del TOC === */
+#TOC a {
+  color: #333;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+#TOC a:hover {
+  text-decoration: underline;
+  color: #333;
+}
+
+#TOC a.active {
+  font-weight: bold;
+  color: #333;
 }

@@ -94,7 +94,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./CV.html"> 
+    <a class="nav-link" href="./Professional_Profile.html"> 
 <span class="menu-text">Professional Profile</span></a>
   </li>  
   <li class="nav-item">
@@ -122,6 +122,9 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+        <div class="sidebar-tools-main">
+    <a href="" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-none"></i></a>
+</div>
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
@@ -155,44 +158,50 @@ ul.task-list li input[type="checkbox"] {
 
 
 </main> <!-- /main -->
+<!-- sidebar-author.html -->
+<div id="sidebar-author-block" style="display: none;">
+  <div style="text-align: center; margin: 1em 0; line-height: 1.5;">
+    <img src="assets/img/nicolas.jpg" alt="Portrait of Nicolás Luna Niño" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 0.5em;">
+    <div style="font-weight: bold;">Nicolás Luna Niño</div>
+    <div style="font-size: 0.85em; margin-bottom: 1em;">Bioinformatician &amp; Data Analyst</div>
+
+    <div style="text-align: left;">
+      <div style="font-weight: bold; font-size: 0.85em;">Contact</div>
+      <ul style="list-style: none; font-size: 0.8em; padding-left: 0em; margin: 0 0 1em 0;">
+        <li><i class="fa-solid fa-location-dot" style="width: 20px; font-size: 1.1em;"></i> Bogotá, Colombia</li>
+        <li><i class="fa-solid fa-phone" style="width: 20px; font-size: 1.1em;"></i> (+57) 317 5058 578</li>
+        <li><i class="fa-solid fa-envelope" style="width: 20px; font-size: 1.1em;"></i> nico250999@gmail.com</li>
+      </ul>
+
+      <div style="font-weight: bold; font-size: 0.85em;">Links</div>
+      <ul style="list-style: none; font-size: 0.8em; padding-left: 0em; margin: 0 0 1em 0;">
+        <li><i class="fa-brands fa-github" style="width: 20px; font-size: 1.1em;"></i> <a href="https://github.com/NicoLN-25" target="_blank">GitHub</a></li>
+        <li><i class="fa-brands fa-linkedin" style="width: 20px; font-size: 1.1em;"></i> <a href="https://linkedin.com/in/nicolas-luna-nino" target="_blank">LinkedIn</a></li>
+      </ul>
+
+      <div style="font-weight: bold; font-size: 0.85em;">Research</div>
+      <ul style="list-style: none; font-size: 0.8em; padding-left: 0em;">
+        <li><i class="fa-solid fa-graduation-cap" style="width: 20px;"></i> <a href="https://scholar.google.com/citations?user=-nDhqZ4AAAAJ&amp;hl=es" target="_blank">Google Scholar</a></li>
+        <li><i class="fa-solid fa-flask" style="width: 20px;"></i> <a href="https://www.researchgate.net/profile/Nicolas-Luna-Nino-2?ev=hdr_xprf" target="_blank">ResearchGate</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
 <script>
   window.addEventListener("DOMContentLoaded", () => {
-    const tocSidebar = document.querySelector("#quarto-margin-sidebar nav");
+    const checkSidebar = setInterval(() => {
+      const sidebar = document.querySelector("#quarto-sidebar .sidebar-tools-main");
+      const author = document.getElementById("sidebar-author-block");
 
-    if (tocSidebar) {
-      const authorBlock = document.createElement("div");
-      authorBlock.innerHTML = `
-        <div style="text-align:center; margin-top:2em;">
-          <img src="assets/img/nicolas.jpg" style="width:150px; border-radius:50%;" alt="NLN">
-          <div style="font-weight:bold">Nicolás Luna Niño</div>
-          <div style="font-size:0.85em; margin-bottom:1em;">Bioinformatician & Data Analyst</div>
-          <ul style="list-style:none; padding:0; font-size:0.85em; text-align:left; margin:0 auto; display:inline-block;">
-          
-          <li style="margin-bottom:0.3em;"><i class="fa-solid fa-location-dot" style="width:20px;"></i> Bogotá D.C, Colombia</li>
-          <li style="margin-bottom:0.3em;"><i class="fa-solid fa-phone" style="width:20px;"></i> (+57) 3175058578</li>
-          <li style="margin-bottom:0.3em;"><i class="fa-solid fa-envelope" style="width:25px;"></i>nico250999@gmail.com</li>
-          
-          <div class="link-section">
-            <div class="section-title"; div style="font-weight:bold">Links</div>
-              <ul>
-                <li style="margin-bottom:0.3em;"><i class="fa-brands fa-linkedin" style="width:20px;"></i> <a href="https://www.linkedin.com/in/nicolas-luna-nino/" target="_blank">LinkedIn</a></li>
-                <li style="margin-bottom:0.3em;"><i class="fa-brands fa-github" style="width:20px;"></i> <a href="https://github.com/NicoLN-25" target="_blank">GitHub</a></li>
-              </ul>
-            </div>
-            
-            <div class="link-section">
-            <div class="section-title"; div style="font-weight:bold">Research Links</div>
-              <ul>
-                <li style="margin-bottom:0.3em;"><i class="fa-solid fa-graduation-cap" style="width:20px;"></i> <a href="https://scholar.google.com/citations?user=-nDhqZ4AAAAJ&hl=es" target="_blank">Google Scholar</a></li>
-                <li><i class="fa-solid fa-flask" style="width:20px;"></i> <a href="https://www.researchgate.net/profile/Nicolas-Luna-Nino-2/research" target="_blank">ResearchGate</a></li>
-              </ul>
-            </div>
-      `;
-      tocSidebar.insertAdjacentElement("afterend", authorBlock);
-    }
+      if (sidebar && author) {
+        author.style.display = "block";
+        sidebar.appendChild(author);
+        clearInterval(checkSidebar);
+      }
+    }, 300);
   });
 </script>
-
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

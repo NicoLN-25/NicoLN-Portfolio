@@ -1,42 +1,35 @@
 [
   {
-    "objectID": "author.html",
-    "href": "author.html",
+    "objectID": "Professional_Profile.html",
+    "href": "Professional_Profile.html",
     "title": "",
     "section": "",
-    "text": "Nicolás Luna Niño\nBioinformatician & Data Analyst\nResearch Links\n- Google Scholar\n- ResearchGate\n- ORCID\nOther Links\n- GitHub\n- nico250999@gmail.com\n- LinkedIn"
+    "text": "Biologist and Master in Natural Sciences with a passion for the world of microbial communities and the use of bioinformatics as a tool for researching the biological and evolutionary features of different microorganisms.\nPDF Scientific CV PDF Data analyst CV"
   },
   {
-    "objectID": "CV.html",
-    "href": "CV.html",
+    "objectID": "Professional_Profile.html#personal-porfile-and-research-interests",
+    "href": "Professional_Profile.html#personal-porfile-and-research-interests",
     "title": "",
     "section": "",
-    "text": "Biologist and Master in Natural Sciences with a passion for the world of microbial communities and the use of bioinformatics as a tool for researching the biological and evolutionary features of different microorganisms.\nPDF Scientific CV"
+    "text": "Biologist and Master in Natural Sciences with a passion for the world of microbial communities and the use of bioinformatics as a tool for researching the biological and evolutionary features of different microorganisms.\nPDF Scientific CV PDF Data analyst CV"
   },
   {
-    "objectID": "CV.html#personal-porfile-and-research-interests",
-    "href": "CV.html#personal-porfile-and-research-interests",
-    "title": "",
-    "section": "",
-    "text": "Biologist and Master in Natural Sciences with a passion for the world of microbial communities and the use of bioinformatics as a tool for researching the biological and evolutionary features of different microorganisms.\nPDF Scientific CV"
-  },
-  {
-    "objectID": "CV.html#formal-education",
-    "href": "CV.html#formal-education",
+    "objectID": "Professional_Profile.html#formal-education",
+    "href": "Professional_Profile.html#formal-education",
     "title": "",
     "section": "Formal education",
-    "text": "Formal education\n\nMaster of Sciences (M.Sc.) in Natural Sciences\nUniversidad del Rosario, Bogotá, Colombia\nBachelor of Sciences (B.Sc.) in Biology\nUniversidad del Rosario, Bogotá, Colombia\nDisciplinary mentions:\n\nHealth, Environment and Society\nEvolution and Molecular Biology\n\n\n\nCourses and Certificates\n\nWeb Course in Fundamentals of Artificial Intelligence\nCoderHouse, Argentina\nWeb Course in Data Anlystics\nCoderHouse, Argentina\nShort Web Course in Recombinant Protein Expression Platforms Applied to the study of animal Venoms\nLatin American Biotechnology Center (CABBIO)"
+    "text": "Formal education\n\nMaster of Sciences (M.Sc.) in Natural Sciences\nUniversidad del Rosario, Bogotá, Colombia\nBachelor of Sciences (B.Sc.) in Biology\nUniversidad del Rosario, Bogotá, Colombia\nDisciplinary mentions:\n\nHealth, Environment and Society\nEvolution and Molecular Biology"
   },
   {
-    "objectID": "CV.html#research-experience",
-    "href": "CV.html#research-experience",
+    "objectID": "Professional_Profile.html#research-experience",
+    "href": "Professional_Profile.html#research-experience",
     "title": "",
     "section": "Research Experience",
     "text": "Research Experience\nResearch Assistant – GIMUR / CIMBIUR\nUniversidad del Rosario (2021–2024)\n\nParticipated in projects on genomic surveillance of emerging pathogens, including SARS-CoV-2 and Monkeypox virus.\nCharacterized the microbial ecology of various biological systems using next-generation sequencing (NGS).\nConducted molecular and bioinformatic analyses on different microbes using Sanger, Illumina or Oxford Nanopore Technologies (ONT)"
   },
   {
-    "objectID": "CV.html#research-interests",
-    "href": "CV.html#research-interests",
+    "objectID": "Professional_Profile.html#research-interests",
+    "href": "Professional_Profile.html#research-interests",
     "title": "",
     "section": "Research Interests",
     "text": "Research Interests\n\nMicrobial ecology and evolution\nComputational Metagenomics\nEpidemiology and zoonotic diseases\nData analytics in life sciences"
