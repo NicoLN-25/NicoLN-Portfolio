@@ -35,6 +35,13 @@
     "text": "Research Interests\n\nMicrobial ecology and evolution\nComputational Metagenomics\nEpidemiology and zoonotic diseases\nData analytics in life sciences"
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "👋 Welcome",
+    "section": "",
+    "text": "👋 Welcome\nI’m a Bioinformatician and Data Analyst with experience in microbiome analysis, ecological modeling, and health data visualisation. I combine scripting in R and Bash with strong analytical workflows to generate reproducible insights from complex datasets.\n📍 Based in Colombia — seeking PhD opportunities and data-intensive collaborations."
+  },
+  {
     "objectID": "Projects.html",
     "href": "Projects.html",
     "title": "Projects",
@@ -47,12 +54,5 @@
     "title": "Projects",
     "section": "",
     "text": "Here\n\n\nGeographic and geospatial analyses of COVID-19 in Colombia: Trends in case distribution, recovery, and mortality (2023–2024)\nThis project consists in an interactive dashboard that allow to explore the evolution of cases, recovering, and deaths at geographic (Departments and Municipalities), demographic (Age, Sex, ethnic group), and clinic (patient status and type of infection) level.\nObjectives of the analysis:\n\nExaminar las dinámicas casos positivos de COVID-19, recuperaciones, y muertes a nivel geográfico, demográfico y clínico durante los años 2023-2024\nVisualizar dinámicas mensuales y anuales\nCalcular KPIs como fallecimientos, recuperaciones y casos activos\n\n\n\n\n  ❮\n\n  \n    \n      \n      \n      \n      \n    \n  \n\n  ❯\n\n\n\nFiles\n📋 Informe (.pdf)\n📥 Descargar el archivo Power BI (.pbix)\n📗 Descargar Dataset (.xlsx)"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Nicolás Luna Niño",
-    "section": "",
-    "text": "👋 Welcome\nI’m a Bioinformatician and Data Analyst with experience in microbiome analysis, ecological modeling, and health data visualisation. I combine scripting in R and Bash with strong analytical workflows to generate reproducible insights from complex datasets.\n📍 Based in Colombia — seeking PhD opportunities and data-intensive collaborations."
   }
 ]
