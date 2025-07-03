@@ -115,7 +115,7 @@ ul.task-list li input[type="checkbox"] {
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
         <div class="sidebar-tools-main">
@@ -129,24 +129,27 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of Contents</h2>
    
   <ul>
-  <li><a href="#personal-porfile-and-research-interests" id="toc-personal-porfile-and-research-interests" class="nav-link active" data-scroll-target="#personal-porfile-and-research-interests">Personal porfile and Research interests</a></li>
-  <li><a href="#formal-education" id="toc-formal-education" class="nav-link" data-scroll-target="#formal-education">Formal education</a></li>
-  <li><a href="#research-experience" id="toc-research-experience" class="nav-link" data-scroll-target="#research-experience">Research Experience</a></li>
-  <li><a href="#research-interests" id="toc-research-interests" class="nav-link" data-scroll-target="#research-interests">Research Interests</a></li>
+  <li><a href="#personal-profile" id="toc-personal-profile" class="nav-link active" data-scroll-target="#personal-profile">Personal Profile</a></li>
+  <li><a href="#formal-education" id="toc-formal-education" class="nav-link" data-scroll-target="#formal-education">Formal education</a>
+  <ul class="collapse">
+  <li><a href="#research" id="toc-research" class="nav-link" data-scroll-target="#research">Research</a></li>
+  <li><a href="#data-analytics" id="toc-data-analytics" class="nav-link" data-scroll-target="#data-analytics">Data Analytics</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content column-body" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
 
-<section id="personal-porfile-and-research-interests" class="level2">
-<h2 class="anchored" data-anchor-id="personal-porfile-and-research-interests">Personal porfile and Research interests</h2>
+<section id="personal-profile" class="level2">
+<h2 class="anchored" data-anchor-id="personal-profile">Personal Profile</h2>
 <p>Biologist and Master in Natural Sciences with a passion for the world of microbial communities and the use of bioinformatics as a tool for researching the biological and evolutionary features of different microorganisms.</p>
-<p><a href="assets/CV_NLN.pdf" class="btn btn-primary" target="_blank">PDF Scientific CV</a> <a href="assets/CV_NLN.pdf" class="btn btn-primary" target="_blank">PDF Data analyst CV</a></p>
-<hr>
+<div class="d-flex gap-2 my-3">
+<p><button id="btn-research" class="btn btn-primary" onclick="toggleSection('research')">🔬 Research</button> <button id="btn-analytics" class="btn btn-primary" onclick="toggleSection('analytics')">📊 Data Analytics</button></p>
+</div>
 </section>
 <section id="formal-education" class="level2">
 <h2 class="anchored" data-anchor-id="formal-education">Formal education</h2>
@@ -154,16 +157,13 @@ ul.task-list li input[type="checkbox"] {
 <li><p><strong>Master of Sciences (M.Sc.) in Natural Sciences</strong><br>
 Universidad del Rosario, Bogotá, Colombia</p></li>
 <li><p><strong>Bachelor of Sciences (B.Sc.) in Biology</strong><br>
-Universidad del Rosario, Bogotá, Colombia</p>
-<p><strong>Disciplinary mentions:</strong></p>
-<ul>
-<li>Health, Environment and Society</li>
-<li>Evolution and Molecular Biology</li>
-</ul></li>
+Universidad del Rosario, Bogotá, Colombia</p></li>
 </ul>
-</section>
-<section id="research-experience" class="level2">
-<h2 class="anchored" data-anchor-id="research-experience">Research Experience</h2>
+<section id="research" class="level3" style="display:none; margin-top:1em;">
+<h3 class="anchored" data-anchor-id="research">Research</h3>
+<p><a href="assets/CV_NLN.pdf" class="btn btn-primary" target="_blank">PDF Scientific CV</a></p>
+<section id="research-experience" class="level4">
+<h4 class="anchored" data-anchor-id="research-experience">Research Experience</h4>
 <p><strong>Research Assistant – GIMUR / CIMBIUR</strong><br>
 Universidad del Rosario (2021–2024)</p>
 <ul>
@@ -172,14 +172,39 @@ Universidad del Rosario (2021–2024)</p>
 <li><p>Conducted <strong>molecular</strong> and <strong>bioinformatic</strong> analyses on different microbes using Sanger, Illumina or Oxford Nanopore Technologies (ONT)</p></li>
 </ul>
 </section>
-<section id="research-interests" class="level2">
-<h2 class="anchored" data-anchor-id="research-interests">Research Interests</h2>
+<section id="research-interests" class="level4">
+<h4 class="anchored" data-anchor-id="research-interests">Research Interests</h4>
 <ul>
 <li><strong>Microbial ecology and evolution</strong></li>
 <li><strong>Computational Metagenomics</strong></li>
 <li><strong>Epidemiology and zoonotic diseases</strong></li>
 <li><strong>Data analytics in life sciences</strong></li>
 </ul>
+</section>
+</section>
+<div id="analytics" style="display:none; margin-top:1em;">
+<section id="data-analytics" class="level3">
+<h3 class="anchored" data-anchor-id="data-analytics">Data Analytics</h3>
+<p><a href="assets/CV_NLN.pdf" class="btn btn-primary" target="_blank">PDF Data analyst CV</a></p>
+</section>
+</div>
+<script>
+  function toggleSection(id) {
+    const section = document.getElementById(id);
+    const isVisible = section.style.display === "block";
+
+    // Oculta todas las secciones
+    ["research", "analytics"].forEach(sid => {
+      const el = document.getElementById(sid);
+      if (el) el.style.display = "none";
+    });
+
+    // Si la sección estaba oculta, muéstrala
+    if (!isVisible) {
+      section.style.display = "block";
+    }
+  }
+</script>
 
 
 </section>
