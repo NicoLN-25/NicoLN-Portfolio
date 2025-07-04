@@ -140,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="data-analysis-projects" class="level2">
 <h2 class="anchored" data-anchor-id="data-analysis-projects">Data Analysis Projects</h2>
-<p>Here</p>
+<p>Here you will find different data analysis projects that show the application of statistical and computational tools to extract meaningful insights from complex datasets. These projects cover various topics, from public health to exploratory business analytics, and demonstrate the use of techniques such as data cleaning, visualisation, and dashboard creation. Each project aims to communicate findings clearly and effectively, using tools like Excel, Python, R, and Power BI.</p>
 <section id="project-i" class="level3">
 <h3 class="anchored" data-anchor-id="project-i">Project I</h3>
 <p><strong>Geographic and geospatial analyses of COVID-19 in Colombia: Trends in case distribution, recovery, and mortality (2023–2024)</strong></p>
@@ -154,16 +154,18 @@ ul.task-list li input[type="checkbox"] {
 </p>
 <style>
 .carousel-wrapper {
-  position: relative;
-  max-width: 800px;
-  margin: 0 auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .carousel-container {
+  position: relative;
+  width: 800px;
+  max-width: 100%;
   overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .carousel-track {
@@ -172,14 +174,10 @@ ul.task-list li input[type="checkbox"] {
 }
 
 .carousel-image {
-  min-width: 100%;
+  width: 100%;
   object-fit: contain;
-  display: block;
-  height: auto;
-  max-height: 500px;
 }
 
-/* Botones de navegación */
 .carousel-btn {
   position: absolute;
   top: 50%;
@@ -187,20 +185,13 @@ ul.task-list li input[type="checkbox"] {
   background: rgba(0, 0, 0, 0.4);
   border: none;
   color: white;
-  font-size: 30px;
-  width: 40px;
-  height: 40px;
+  font-size: 2rem;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 2;
-  transition: background 0.3s;
-}
-
-.carousel-btn:hover {
-  background: rgba(0, 0, 0, 0.6);
+  display: none; /* ocultas por defecto */
+  z-index: 1;
 }
 
 .carousel-btn.left {
@@ -211,16 +202,17 @@ ul.task-list li input[type="checkbox"] {
   right: 10px;
 }
 
-/* En móviles */
-@media (max-width: 600px) {
-  .carousel-image {
-    max-height: 300px;
-  }
+/* 🖥️ Mostrar flechas solo al hacer hover en pantallas grandes */
+.carousel-container:hover .carousel-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+/* 📱 Siempre mostrar flechas en pantallas pequeñas */
+@media (max-width: 768px) {
   .carousel-btn {
-    width: 32px;
-    height: 32px;
-    font-size: 24px;
+    display: flex !important;
   }
 }
 </style>
@@ -233,10 +225,10 @@ ul.task-list li input[type="checkbox"] {
       <img class="carousel-image" src="assets/data-analysis/covid-dashboard/Positive_Cases.png" alt="Casos Positivos">
       <img class="carousel-image" src="assets/data-analysis/covid-dashboard/Recovered_Cases.png" alt="Casos Recuperados">
     </div>
-  </div>
 
-  <button class="carousel-btn left" onclick="moveSlide(-1)">❮</button>
-  <button class="carousel-btn right" onclick="moveSlide(1)">❯</button>
+    <button class="carousel-btn left" onclick="moveSlide(-1)">❮</button>
+    <button class="carousel-btn right" onclick="moveSlide(1)">❯</button>
+  </div>
 </div>
 
 <script>
