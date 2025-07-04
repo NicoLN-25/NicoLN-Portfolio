@@ -26,5 +26,26 @@
     "title": "",
     "section": "Research",
     "text": "Research\nPDF Scientific CV\n\nResearch Experience\nResearch Assistant – GIMUR / CIMBIUR\nUniversidad del Rosario (2021–2024)\n\nParticipated in projects on genomic surveillance of emerging pathogens, including SARS-CoV-2 and Monkeypox virus.\nCharacterized the microbial ecology of various biological systems using next-generation sequencing (NGS).\nConducted molecular and bioinformatic analyses on different microbes using Sanger, Illumina or Oxford Nanopore Technologies (ONT)\n\n\n\nResearch Interests\n\nMicrobial ecology and evolution\nComputational Metagenomics\nEpidemiology and zoonotic diseases\nData analytics in life sciences"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "👋 Welcome",
+    "section": "",
+    "text": "👋 Welcome\nI’m a Bioinformatician and Data Analyst with experience in microbiome analysis, ecological modeling, and health data visualisation. I combine scripting in R and Bash with strong analytical workflows to generate reproducible insights from complex datasets.\n📍 Based in Colombia — seeking PhD opportunities and data-intensive collaborations."
+  },
+  {
+    "objectID": "Portfolio_Projects.html",
+    "href": "Portfolio_Projects.html",
+    "title": "",
+    "section": "",
+    "text": "Here\n\n\nGeographic and geospatial analyses of COVID-19 in Colombia: Trends in case distribution, recovery, and mortality (2023–2024)\nThis project consists of an interactive dashboard that allows users to explore the evolution of cases, recoveries and deaths at geographical (departments and municipalities), demographic (age, sex and ethnic group) and clinical (patient status and type of infection) levels.\nObjectives of the analysis:\n\nExamine the dynamics of positive COVID-19 cases, recoveries, and deaths at the geographical, demographic, and clinical levels during the years 2023–2024\nCalculate KPIs such as percentage of deaths, recoveries, and active cases\n\nDashboard:\n\n\n\n\n  \n    ❮\n\n    \n      \n      \n      \n      \n    \n\n    ❯\n  \n\n\n\n\n\nFiles:\n\n\n Report (.pdf)   Power BI File (.pbix)   Dataset (.xlsx)"
+  },
+  {
+    "objectID": "Portfolio_Projects.html#data-analysis-projects",
+    "href": "Portfolio_Projects.html#data-analysis-projects",
+    "title": "",
+    "section": "",
+    "text": "Here\n\n\nGeographic and geospatial analyses of COVID-19 in Colombia: Trends in case distribution, recovery, and mortality (2023–2024)\nThis project consists of an interactive dashboard that allows users to explore the evolution of cases, recoveries and deaths at geographical (departments and municipalities), demographic (age, sex and ethnic group) and clinical (patient status and type of infection) levels.\nObjectives of the analysis:\n\nExamine the dynamics of positive COVID-19 cases, recoveries, and deaths at the geographical, demographic, and clinical levels during the years 2023–2024\nCalculate KPIs such as percentage of deaths, recoveries, and active cases\n\nDashboard:\n\n\n\n\n  \n    ❮\n\n    \n      \n      \n      \n      \n    \n\n    ❯\n  \n\n\n\n\n\nFiles:\n\n\n Report (.pdf)   Power BI File (.pbix)   Dataset (.xlsx)"
   }
 ]
