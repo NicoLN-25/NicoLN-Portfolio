@@ -157,55 +157,30 @@ ul.task-list li input[type="checkbox"] {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.carousel-container {
+  gap: 20px;
   position: relative;
-  width: 1000px;
-  height: 420px;
-  max-width: 100%;
-  overflow: hidden;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-.carousel-track {
-  display: flex;
-  transition: transform 0.5s ease;
-}
-
-.carousel-image {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-/* Flechas ocultas por defecto */
+/* Botones dentro del carrusel */
 .carousel-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 2;
   background: rgba(0, 0, 0, 0.4);
   border: none;
   color: white;
   font-size: 30px;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   cursor: pointer;
-  transition: background 0.3s, opacity 0.3s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  pointer-events: none; /* Evita clics cuando está oculto */
+  z-index: 2;
+  display: none; /* Se ocultan por defecto */
 }
 
-/* Mostrar flechas al pasar el cursor */
-.carousel-container:hover .carousel-btn {
-  opacity: 1;
-  pointer-events: auto;
+.carousel-container:hover + .carousel-btn,
+.carousel-container:hover ~ .carousel-btn {
+  display: flex; /* Aparecen al pasar el mouse */
 }
 
 .carousel-btn:hover {
@@ -219,21 +194,56 @@ ul.task-list li input[type="checkbox"] {
 .carousel-btn.right {
   right: 10px;
 }
+
+.carousel-container {
+  width: 800px;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-image {
+  min-width: 100%;
+  object-fit: contain;
+}
+
+/* 📱 Estilo adaptado a móviles */
+@media (max-width: 768px) {
+  .carousel-container {
+    width: 100%;
+  }
+
+  .carousel-image {
+    height: auto;
+    max-height: 300px;
+  }
+
+  .carousel-btn {
+    font-size: 24px;
+    width: 36px;
+    height: 36px;
+  }
+}
 </style>
 
 <div class="carousel-wrapper">
   <div class="carousel-container">
-    <button class="carousel-btn left" onclick="moveSlide(-1)">❮</button>
-
     <div class="carousel-track" id="carousel">
       <img class="carousel-image" src="assets/data-analysis/covid-dashboard/Resume.png" alt="Resumen COVID">
       <img class="carousel-image" src="assets/data-analysis/covid-dashboard/Active_Cases.png" alt="Casos Activos">
       <img class="carousel-image" src="assets/data-analysis/covid-dashboard/Positive_Cases.png" alt="Casos Positivos">
       <img class="carousel-image" src="assets/data-analysis/covid-dashboard/Recovered_Cases.png" alt="Casos Recuperados">
     </div>
-
-    <button class="carousel-btn right" onclick="moveSlide(1)">❯</button>
   </div>
+
+  <button class="carousel-btn left" onclick="moveSlide(-1)">❮</button>
+  <button class="carousel-btn right" onclick="moveSlide(1)">❯</button>
 </div>
 
 <script>
