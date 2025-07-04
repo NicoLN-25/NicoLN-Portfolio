@@ -86,10 +86,6 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./Professional_Profile.html"> 
 <span class="menu-text">Professional Profile</span></a>
   </li>  
@@ -152,7 +148,7 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Objectives of the analysis:</strong></p>
 <ul>
 <li><p>Examine the dynamics of positive COVID-19 cases, recoveries, and deaths at the geographical, demographic, and clinical levels during the years 2023–2024</p></li>
-<li><p>Calculate KPIs such as deaths, recoveries, and active cases</p></li>
+<li><p>Calculate KPIs such as percentage of deaths, recoveries, and active cases</p></li>
 </ul>
 <p><strong>Dashboard:</strong><br>
 </p>
@@ -161,12 +157,12 @@ ul.task-list li input[type="checkbox"] {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
 }
 
 .carousel-container {
   position: relative;
-  width: 800px;
+  width: 1000px;
+  height: 420px;
   max-width: 100%;
   overflow: hidden;
   border-radius: 12px;
@@ -179,11 +175,17 @@ ul.task-list li input[type="checkbox"] {
 }
 
 .carousel-image {
-  min-width: 100%;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
 }
 
+/* Flechas ocultas por defecto */
 .carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
   background: rgba(0, 0, 0, 0.4);
   border: none;
   color: white;
@@ -192,31 +194,46 @@ ul.task-list li input[type="checkbox"] {
   height: 50px;
   border-radius: 50%;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: background 0.3s, opacity 0.3s;
   display: flex;
-  line-height: 1 !important;
   align-items: center;
   justify-content: center;
+  opacity: 0;
+  pointer-events: none; /* Evita clics cuando está oculto */
+}
+
+/* Mostrar flechas al pasar el cursor */
+.carousel-container:hover .carousel-btn {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .carousel-btn:hover {
   background: rgba(0, 0, 0, 0.6);
 }
+
+.carousel-btn.left {
+  left: 10px;
+}
+
+.carousel-btn.right {
+  right: 10px;
+}
 </style>
 
 <div class="carousel-wrapper">
-  <button class="carousel-btn" onclick="moveSlide(-1)">❮</button>
-
   <div class="carousel-container">
+    <button class="carousel-btn left" onclick="moveSlide(-1)">❮</button>
+
     <div class="carousel-track" id="carousel">
       <img class="carousel-image" src="assets/data-analysis/covid-dashboard/Resume.png" alt="Resumen COVID">
       <img class="carousel-image" src="assets/data-analysis/covid-dashboard/Active_Cases.png" alt="Casos Activos">
       <img class="carousel-image" src="assets/data-analysis/covid-dashboard/Positive_Cases.png" alt="Casos Positivos">
       <img class="carousel-image" src="assets/data-analysis/covid-dashboard/Recovered_Cases.png" alt="Casos Recuperados">
     </div>
-  </div>
 
-  <button class="carousel-btn" onclick="moveSlide(1)">❯</button>
+    <button class="carousel-btn right" onclick="moveSlide(1)">❯</button>
+  </div>
 </div>
 
 <script>
@@ -227,11 +244,13 @@ function moveSlide(step) {
   index = (index + step + total) % total;
   track.style.transform = `translateX(-${index * 100}%)`;
 }
-</script><br>
-<p></p>
-<strong>Files:</strong>
+</script>
+<p><br>
+</p>
+<strong>Files:</strong><br>
+
 <div class="btn-group-vertical my-3" role="group" aria-label="Botones de descarga">
-<p><a href="assets/data-analysis/covid-dashboard/Proyecto_Final.pdf" target="_blank" class="btn btn-primary"> 📋 Informe (.pdf) </a> <a href="assets/data-analysis/covid-dashboard/Casos_positivos_de_COVID-19_en_Colombia_(2023-2024).pbix" download="" class="btn btn-primary"> 📥 Descargar el archivo Power BI (.pbix) </a> <a href="assets/data-analysis/covid-dashboard/COVID-19_Colombia_2023-2024.xlsx" download="" class="btn btn-primary"> 📗 Descargar Dataset (.xlsx) </a></p>
+<p><a href="assets/data-analysis/covid-dashboard/Proyecto_Final.pdf" target="_blank" class="btn btn-primary"> Report (.pdf) </a> <a href="assets/data-analysis/covid-dashboard/Casos_positivos_de_COVID-19_en_Colombia_(2023-2024).pbix" download="" class="btn btn-primary"> Power BI File (.pbix) </a> <a href="assets/data-analysis/covid-dashboard/COVID-19_Colombia_2023-2024.xlsx" download="" class="btn btn-primary"> Dataset (.xlsx) </a></p>
 </div>
 
 
