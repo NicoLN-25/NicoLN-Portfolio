@@ -154,14 +154,32 @@ ul.task-list li input[type="checkbox"] {
 </p>
 <style>
 .carousel-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
   position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
 }
 
-/* Botones dentro del carrusel */
+.carousel-container {
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-image {
+  min-width: 100%;
+  object-fit: contain;
+  display: block;
+  height: auto;
+  max-height: 500px;
+}
+
+/* Botones de navegación */
 .carousel-btn {
   position: absolute;
   top: 50%;
@@ -174,13 +192,11 @@ ul.task-list li input[type="checkbox"] {
   height: 40px;
   border-radius: 50%;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   z-index: 2;
-  display: none; /* Se ocultan por defecto */
-}
-
-.carousel-container:hover + .carousel-btn,
-.carousel-container:hover ~ .carousel-btn {
-  display: flex; /* Aparecen al pasar el mouse */
+  transition: background 0.3s;
 }
 
 .carousel-btn:hover {
@@ -195,39 +211,16 @@ ul.task-list li input[type="checkbox"] {
   right: 10px;
 }
 
-.carousel-container {
-  width: 800px;
-  max-width: 100%;
-  overflow: hidden;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-.carousel-track {
-  display: flex;
-  transition: transform 0.5s ease;
-}
-
-.carousel-image {
-  min-width: 100%;
-  object-fit: contain;
-}
-
-/* 📱 Estilo adaptado a móviles */
-@media (max-width: 768px) {
-  .carousel-container {
-    width: 100%;
-  }
-
+/* En móviles */
+@media (max-width: 600px) {
   .carousel-image {
-    height: auto;
     max-height: 300px;
   }
 
   .carousel-btn {
+    width: 32px;
+    height: 32px;
     font-size: 24px;
-    width: 36px;
-    height: 36px;
   }
 }
 </style>
