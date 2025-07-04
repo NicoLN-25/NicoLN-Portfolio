@@ -178,6 +178,7 @@ ul.task-list li input[type="checkbox"] {
   object-fit: contain;
 }
 
+/* 🔒 Por defecto, las flechas NO se muestran */
 .carousel-btn {
   position: absolute;
   top: 50%;
@@ -190,7 +191,7 @@ ul.task-list li input[type="checkbox"] {
   height: 50px;
   border-radius: 50%;
   cursor: pointer;
-  display: none; /* ocultas por defecto */
+  display: none; /* 🔒 OCULTO por defecto */
   z-index: 1;
 }
 
@@ -202,31 +203,33 @@ ul.task-list li input[type="checkbox"] {
   right: 10px;
 }
 
-/* 🖥️ Mostrar flechas solo al hacer hover en pantallas grandes */
+/* 🖥️ Mostrar las flechas SOLO al hacer hover sobre el contenedor */
 .carousel-container:hover .carousel-btn {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* 📱 Siempre mostrar flechas en pantallas pequeñas */
+/* 📱 En móviles: siempre mostrar las flechas */
 @media (max-width: 768px) {
   .carousel-btn {
     display: flex !important;
+    align-items: center;
+    justify-content: center;
   }
 }
 </style>
 
 <div class="carousel-wrapper">
   <div class="carousel-container">
+    <button class="carousel-btn left" onclick="moveSlide(-1)">❮</button>
+
     <div class="carousel-track" id="carousel">
-      <img class="carousel-image" src="assets/data-analysis/covid-dashboard/Resume.png" alt="Resumen COVID">
       <img class="carousel-image" src="assets/data-analysis/covid-dashboard/Active_Cases.png" alt="Casos Activos">
       <img class="carousel-image" src="assets/data-analysis/covid-dashboard/Positive_Cases.png" alt="Casos Positivos">
       <img class="carousel-image" src="assets/data-analysis/covid-dashboard/Recovered_Cases.png" alt="Casos Recuperados">
     </div>
 
-    <button class="carousel-btn left" onclick="moveSlide(-1)">❮</button>
     <button class="carousel-btn right" onclick="moveSlide(1)">❯</button>
   </div>
 </div>
