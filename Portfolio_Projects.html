@@ -128,6 +128,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#data-analysis-projects" id="toc-data-analysis-projects" class="nav-link active" data-scroll-target="#data-analysis-projects">Data Analysis Projects</a>
   <ul class="collapse">
   <li><a href="#project-i" id="toc-project-i" class="nav-link" data-scroll-target="#project-i">Project I</a></li>
+  <li><a href="#project-ii" id="toc-project-ii" class="nav-link" data-scroll-target="#project-ii">Project II</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -155,6 +156,142 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="dashboard" class="level6">
 <h6 class="anchored" data-anchor-id="dashboard">Dashboard:</h6>
+<style>
+.carousel-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.carousel-container {
+  position: relative;
+  width: 800px;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-image {
+  min-width: 100%;
+  object-fit: contain;
+}
+
+.carousel-btn {
+  background: rgba(0, 0, 0, 0.4);
+  border: none;
+  color: white;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+  display: flex;
+  line-height: 1;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.carousel-btn:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.carousel-btn.left {
+  left: 10px;
+}
+
+.carousel-btn.right {
+  right: 10px;
+}
+
+.carousel-container:hover .carousel-btn {
+  visibility: visible;
+}
+
+.carousel-btn {
+  visibility: hidden;
+}
+</style>
+
+<div class="carousel-wrapper">
+  <div class="carousel-container">
+    <button class="carousel-btn left" onclick="moveSlide(-1)">❮</button>
+    <div class="carousel-track" id="carousel">
+      <img class="carousel-image" src="assets/data-analysis/covid-dashboard/Recovered_Cases.png" alt="Cloned Last">
+      <img class="carousel-image" src="assets/data-analysis/covid-dashboard/Resume.png" alt="Resumen COVID">
+      <img class="carousel-image" src="assets/data-analysis/covid-dashboard/Active_Cases.png" alt="Casos Activos">
+      <img class="carousel-image" src="assets/data-analysis/covid-dashboard/Positive_Cases.png" alt="Casos Positivos">
+      <img class="carousel-image" src="assets/data-analysis/covid-dashboard/Recovered_Cases.png" alt="Casos Recuperados">
+      <img class="carousel-image" src="assets/data-analysis/covid-dashboard/Resume.png" alt="Cloned First">
+    </div>
+    <button class="carousel-btn right" onclick="moveSlide(1)">❯</button>
+  </div>
+</div>
+
+<script>
+let index = 1; // starts at first real image
+const track = document.getElementById('carousel');
+const slides = track.children;
+const slideCount = slides.length;
+const slideWidth = 100;
+
+// Position initial image
+track.style.transform = `translateX(-${index * slideWidth}%)`;
+
+function moveSlide(step) {
+  index += step;
+  track.style.transition = 'transform 0.5s ease';
+  track.style.transform = `translateX(-${index * slideWidth}%)`;
+
+  // Esperar al final de la animación
+  track.addEventListener('transitionend', handleLoop, { once: true });
+}
+
+function handleLoop() {
+  // Si está en la última imagen clonada → vuelve al primero real
+  if (index === slideCount - 1) {
+    index = 1;
+    track.style.transition = 'none';
+    track.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  // Si está en la primera imagen clonada → vuelve al último real
+  if (index === 0) {
+    index = slideCount - 2;
+    track.style.transition = 'none';
+    track.style.transform = `translateX(-${index * 100}%)`;
+  }
+}
+</script>
+
+</section>
+</section>
+</section>
+<section id="project-ii" class="level3">
+<h3 class="anchored" data-anchor-id="project-ii">Project II</h3>
+<section id="heart-failure-prediction" class="level5">
+<h5 class="anchored" data-anchor-id="heart-failure-prediction">Heart Failure Prediction</h5>
+<p>This project features an interactive dashboard designed to explore the geographic, demographic, and clinical patterns of COVID-19 cases in Colombia between 2023 and 2024. The dashboard enables users to visualise <strong>the distribution and evolution of confirmed cases, recoveries, and deaths</strong> across departments and municipalities, as well as by age group, sex, ethnic background, and patient status (recovered, active, deceased).</p>
+<section id="objectives-of-the-analysis-1" class="level6">
+<h6 class="anchored" data-anchor-id="objectives-of-the-analysis-1">Objectives of the analysis:</h6>
+<ul>
+<li><p>Analyse <strong>the spatial and temporal trends of COVID-19 cases, recoveries, and deaths</strong> across geographic (departments and municipalities), demographic (age, sex, ethnic group), and clinical (infection type, patient status) dimensions</p></li>
+<li><p>Calculate key performance indicators (KPIs), such as the percentage of recoveries, active cases, and mortality rate</p></li>
+</ul>
+</section>
+<section id="dashboard-1" class="level6">
+<h6 class="anchored" data-anchor-id="dashboard-1">Dashboard:</h6>
 <style>
 .carousel-wrapper {
   display: flex;
