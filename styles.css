@@ -80,3 +80,103 @@ h6 {
 button, .btn {
   font-weight: bold !important;
 }
+
+/* Contenedor general de habilidades */
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .skills-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Cada habilidad */
+.skill-entry {
+  margin-bottom: 2em;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+/* Cabecera con nombre de habilidad */
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 0.25em;
+}
+
+.skill-header span:first-child {
+  font-size: 1.2rem;
+  color: #2c3e50;
+}
+
+/* Herramientas */
+.skill-tools {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 0.2em;
+}
+
+/* Descripción del skill */
+.skill-desc {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.5em;
+}
+
+/* Contenedor barra + etiqueta */
+.progress-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+/* Barra de progreso */
+.progress-bar {
+  position: relative;
+  flex: 1;
+  height: 12px;
+  background-color: #e6e6e6;
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+}
+
+/* Relleno de la barra */
+.progress-fill {
+  height: 100%;
+  background-color: #2c3e50;
+  border-radius: 6px 0 0 6px;
+  transition: width 0.4s ease;
+}
+
+/* Líneas divisorias */
+.progress-bar::before,
+.progress-bar .divider-1,
+.progress-bar .divider-2,
+.progress-bar .divider-3 {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: white;
+  opacity: 0.7;
+}
+
+.progress-bar::before { left: 25%; }
+.progress-bar .divider-1 { left: 50%; }
+.progress-bar .divider-2 { left: 75%; }
+.progress-bar .divider-3 { left: 100%; }
+
+/* Texto de nivel (a la derecha de la barra) */
+.progress-label {
+  color: #5f5f6f;
+  font-size: 1rem;
+}
