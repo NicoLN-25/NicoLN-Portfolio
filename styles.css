@@ -17,6 +17,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h2 {
   font-size: 28px;
+  text-align: left;
 }
 
 h3, h4 {
@@ -24,11 +25,11 @@ h3, h4 {
 }
 
 h5 {
-  font-size: 23px !important;
+  font-size: 24px !important;
 }
 
 h6 {
-  font-size: 19px !important;
+  font-size: 20px !important;
 }
 
 /* === Estilo general del TOC === */
@@ -127,6 +128,7 @@ button, .btn {
 .skill-desc {
   font-size: 1rem;
   color: #333;
+  text-align: left;
   margin-bottom: 0.5em;
 }
 
@@ -134,7 +136,7 @@ button, .btn {
 .progress-wrapper {
   display: flex;
   align-items: center;
-  gap: 1em;
+  gap: 3em;
 }
 
 /* Barra de progreso */
@@ -174,9 +176,3 @@ button, .btn {
 .progress-bar .divider-1 { left: 50%; }
 .progress-bar .divider-2 { left: 75%; }
 .progress-bar .divider-3 { left: 100%; }
-
-/* Texto de nivel (a la derecha de la barra) */
-.progress-label {
-  color: #5f5f6f;
-  font-size: 1rem;
-}
